@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Primal-Technologies/static/css/main.266173d9.chunk.css",
+    "main.js": "/Primal-Technologies/static/js/main.83c8d9a5.chunk.js",
+    "main.js.map": "/Primal-Technologies/static/js/main.83c8d9a5.chunk.js.map",
+    "runtime-main.js": "/Primal-Technologies/static/js/runtime-main.e04f70e7.js",
+    "runtime-main.js.map": "/Primal-Technologies/static/js/runtime-main.e04f70e7.js.map",
+    "static/js/2.1c2321f4.chunk.js": "/Primal-Technologies/static/js/2.1c2321f4.chunk.js",
+    "static/js/2.1c2321f4.chunk.js.map": "/Primal-Technologies/static/js/2.1c2321f4.chunk.js.map",
+    "index.html": "/Primal-Technologies/index.html",
+    "precache-manifest.6a68a9f2746a13e9eb1eb2374406798a.js": "/Primal-Technologies/precache-manifest.6a68a9f2746a13e9eb1eb2374406798a.js",
+    "service-worker.js": "/Primal-Technologies/service-worker.js",
+    "static/css/main.266173d9.chunk.css.map": "/Primal-Technologies/static/css/main.266173d9.chunk.css.map",
+    "static/js/2.1c2321f4.chunk.js.LICENSE": "/Primal-Technologies/static/js/2.1c2321f4.chunk.js.LICENSE",
+    "static/media/logo.svg": "/Primal-Technologies/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e04f70e7.js",
+    "static/js/2.1c2321f4.chunk.js",
+    "static/css/main.266173d9.chunk.css",
+    "static/js/main.83c8d9a5.chunk.js"
+  ]
+}
