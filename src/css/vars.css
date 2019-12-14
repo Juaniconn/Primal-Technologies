@@ -1,0 +1,17 @@
+/* Vars */
+
+:root{
+    --color_brand1: #00B6E2;
+    --color_brand2: #0290B2;
+    --color_brand3: #006179;
+    --color_brand4: #004151;
+    --color_brand5: #002D38;
+
+    --color_grayScale1: #E6E6E6;
+    --color_grayScale2: #ADADAD;
+    --color_grayScale3: #6C6C6C;
+    --color_grayScale4: #343434;
+    --color_grayScale5: #0A0A0A;
+
+    --color_white: #FFF;
+}
