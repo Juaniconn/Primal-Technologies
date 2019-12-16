@@ -166,6 +166,69 @@ function App() {
           <input className="newsletter_btn" type="submit"/>
         </form>
       </div>
+      <div className="contact">
+        <h2>Contact</h2>
+        <div className="contact_iconsWrapper">
+          <div className="contact_item">
+            <i></i>
+            <h3>Call Us</h3>
+            <p>+52 XXX XX XX</p>
+          </div>
+          <div className="contact_item">
+            <i></i>
+            <h3>Address</h3>
+            <p>+52 XXX XX XX</p>
+          </div>
+          <div className="contact_item">
+            <i></i>
+            <h3>Email</h3>
+            <p>+52 XXX XX XX</p>
+          </div>
+        </div>
+        <div className="contact_formWrapper">
+          <form action="" className="contact_form">
+            <input type="text" name="" id="" placeholder="Name" required/>
+            <input type="email" name="" id="" placeholder="Email" required/>
+            <textarea name="" id="" placeholder="Message" cols="30" rows="10"></textarea>
+            <p>*All the fields are required</p>
+            <input type="submit" value="Submit Message"/>
+          </form>
+        </div>
+      </div>
+      <div className="map">
+        <img src="" alt=""/>
+        <div className="map_infoWrapper">
+          <div className="map_iconItem">
+            <i></i>
+          </div>
+          <p>Open the map</p>
+          <i></i>
+        </div>
+      </div>
+      <footer className="footer">
+        <img src="" alt=""/>
+        <div className="footer_icons">
+          <div className="footer_iconItem"><i></i></div>
+          <div className="footer_iconItem"><i></i></div>
+          <div className="footer_iconItem"><i></i></div>
+          <div className="footer_iconItem"><i></i></div>
+          <div className="footer_iconItem"><i></i></div>
+        </div>
+        <div className="footer_nav">
+          <ul>
+            <li><a href="#">Homae</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div className="footer_copyright">
+          <p>© PRIMAL TECHNOLOGIES 2019</p>
+          <p>Made with love by greatest people</p>
+        </div>
+      </footer>
   </div>
   );
 }
