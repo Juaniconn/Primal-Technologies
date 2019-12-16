@@ -14,4 +14,35 @@
     --color_grayScale5: #0A0A0A;
 
     --color_white: #FFF;
+
+    --header_nav_btn--before: {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        min-height: 4.4rem;
+        width: .3rem;
+        margin-top: -4.4rem;
+        background-color: var(--color_brand1);
+        z-index: 1;
+    };
+
+    --header_nav_btn--after: {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: .3rem;
+        background-color: var(--color_brand1);
+    };
 }
+
+/* Media Queries Postcss */
+
+@custom-media --extra-small (width < 480px);
+@custom-media --small (width < 768px);
+@custom-media --medium (width >= 768px);
+@custom-media --large (width >= 1024px);
+
+/* Cuscom Selectors Postcss */

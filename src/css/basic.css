@@ -22,4 +22,15 @@ figure{
     margin: 0;
     padding: 0;
 }
-  
+
+.container{
+    padding: 0 20rem;
+
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    flex-direction: inherit;
+    flex-shrink: inherit;
+
+    width: 100%;
+}

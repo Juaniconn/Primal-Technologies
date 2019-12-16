@@ -16,6 +16,10 @@
     --color_white: #FFF;
 }
 
+/* Media Queries Postcss */
+
+/* Cuscom Selectors Postcss */
+
 /* Basic */
 
 /* basics */
@@ -42,9 +46,114 @@ figure{
     padding: 0;
 }
 
+.container{
+    padding: 0 20rem;
+
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    flex-direction: inherit;
+    flex-shrink: inherit;
+
+    width: 100%;
+}
+
 /* Animations */
 
 /* Header */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color_grayScale5);
+    position: fixed;
+    width: 100%
+}
+
+.header .header_logo{
+        background-image: url(https://i.ibb.co/3RPFtKs/Primal-logo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 15rem;
+        height: 100%;
+    }
+
+.header .nav ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            height: 4.4rem;
+            margin: 0;
+            padding: 0
+        }
+
+.header .nav ul li{
+                height: 100%
+            }
+
+.header .nav ul li a{
+                    display: inline-flex;
+                    align-items: center;
+                    height: 100%;
+                    text-decoration: none;
+                    color: var(--color_white);
+                    font-size: 1.8rem;
+                    text-transform: uppercase;
+                    font-weight: normal;
+                }
+
+.header .nav ul li .nav_servicesHidden{
+                    display: none;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    padding: 1rem 2rem;
+                    position: absolute;
+                    margin-left: -2rem;
+                    background-color: var(--color_grayScale5);
+                    transition: 450ms all;
+                    opacity: 1;
+                    height: initial
+                }
+
+.header .nav ul li .nav_servicesHidden li{
+                        margin: 0
+                    }
+
+.header .nav ul li .nav_servicesHidden li a{
+                            display: block;
+                        }
+
+.header .nav ul li .nav_servicesHidden:hover{
+                    display: flex;
+                }
+
+.header .nav ul li .nav_servicesHidden:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-height: 4.4rem;
+  width: .3rem;
+  margin-top: -4.4rem;
+  background-color: var(--color_brand1);
+  z-index: 1;
+                }
+
+.header .nav ul li .nav_servicesHidden:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: .3rem;
+  background-color: var(--color_brand1);
+                }
+
+.header .nav ul li:not(:last-child){
+                margin-right: 6rem;
+            }
 
 /* About Us */
 

@@ -1,1 +1,77 @@
 /* Header */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color_grayScale5);
+    position: fixed;
+    width: 100%;
+
+    & .header_logo{
+        background-image: url(https://i.ibb.co/3RPFtKs/Primal-logo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 15rem;
+        height: 100%;
+    }
+
+    & .nav{
+        & ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            height: 4.4rem;
+            margin: 0;
+            padding: 0;
+            & li{
+                height: 100%;
+                & a{
+                    display: inline-flex;
+                    align-items: center;
+                    height: 100%;
+                    text-decoration: none;
+                    color: var(--color_white);
+                    font-size: 1.8rem;
+                    text-transform: uppercase;
+                    font-weight: normal;
+                }
+                & .nav_servicesHidden{
+                    display: none;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    padding: 1rem 2rem;
+                    position: absolute;
+                    margin-left: -2rem;
+                    background-color: var(--color_grayScale5);
+                    transition: 450ms all;
+                    opacity: 1;
+                    height: initial;
+                    & li{
+                        margin: 0;
+                        & a{
+                            display: block;
+                        }
+                    }
+                }
+
+                & .nav_servicesHidden:hover{
+                    display: flex;
+                }
+
+                & .nav_servicesHidden:before{
+                    @apply --header_nav_btn--before;
+                }
+
+                & .nav_servicesHidden:after{
+                    @apply --header_nav_btn--after;
+                }
+            }
+
+            & li:not(:last-child){
+                margin-right: 6rem;
+            }
+        }
+    }
+}
