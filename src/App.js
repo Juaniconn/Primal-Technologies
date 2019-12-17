@@ -1,17 +1,17 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header'
-import Hero from './components/Hero'
-import About from './components/About'
-import Services from './components/Services'
-import Exclusive from './components/Exclusive'
-import Values from './components/Values'
-import Testimonials from './components/Testimonials'
-import News from './components/News';
-import Newsletter from './components/Newsletter'
-import Contact from './components/Contact'
-import Map from './components/Map'
-import Footer from './components/Footer'
+import Header from './components/basic/Header'
+import Hero from './components/landing/Hero'
+import About from './components/landing/About'
+import Services from './components/landing/Services'
+import Exclusive from './components/landing/Exclusive'
+import Values from './components/landing/Values'
+import Testimonials from './components/landing/Testimonials'
+import News from './components/landing/News';
+import Newsletter from './components/landing/Newsletter'
+import Contact from './components/landing/Contact'
+import Map from './components/landing/Map'
+import Footer from './components/basic/Footer'
 
 function App() {
   return (

@@ -6,6 +6,7 @@
     background-color: var(--color_grayScale5);
     position: fixed;
     width: 100%;
+    z-index: 9999;
 
     & .header_logo{
         background-image: url(https://i.ibb.co/3RPFtKs/Primal-logo.png);

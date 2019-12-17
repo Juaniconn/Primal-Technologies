@@ -1,1 +1,19 @@
 /* Animations */
+
+.fade_out{
+    animation-name: fade_out;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-play-state: running;
+}
+
+@keyframes fade_out{
+    from{
+        transform: translateY(0) translateX(0) rotate(-45deg);
+    }
+    to{
+        transform: translateY(.7rem) translateX(.7rem) rotate(-45deg);
+    }
+}
