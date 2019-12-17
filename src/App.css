@@ -18,7 +18,159 @@
 
 /* Media Queries Postcss */
 
-/* Cuscom Selectors Postcss */
+/* Icon Font */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./fonts/icomoon.eot?x39n04');
+  src:  url('./fonts/icomoon.eot?x39n04#iefix') format('embedded-opentype'),
+    url('./fonts/icomoon.ttf?x39n04') format('truetype'),
+    url('./fonts/icomoon.woff?x39n04') format('woff'),
+    url('./fonts/icomoon.svg?x39n04#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-feature-settings: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-small-left:before {
+  content: "\e90e";
+}
+
+.icon-chevron-small-right:before {
+  content: "\e90f";
+}
+
+.icon-chat-bubble-dots:before {
+  content: "\e905";
+}
+
+.icon-cheveron-down:before {
+  content: "\e906";
+}
+
+.icon-envelope:before {
+  content: "\e907";
+}
+
+.icon-location:before {
+  content: "\e90d";
+}
+
+.icon-time:before {
+  content: "\e908";
+}
+
+.icon-chart-area:before {
+  content: "\e910";
+}
+
+.icon-flow-switch:before {
+  content: "\e90b";
+}
+
+.icon-align-right:before {
+  content: "\e900";
+}
+
+.icon-chart-line:before {
+  content: "\e909";
+}
+
+.icon-flag-outline:before {
+  content: "\e90c";
+}
+
+.icon-cogs:before {
+  content: "\e995";
+}
+
+.icon-bubbles2:before {
+  content: "\e96d";
+}
+
+.icon-magic-wand:before {
+  content: "\e997";
+}
+
+.icon-star-full:before {
+  content: "\e9d9";
+}
+
+.icon-facebook2:before {
+  content: "\ea91";
+}
+
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+.icon-youtube:before {
+  content: "\ea9d";
+}
+
+.icon-github:before {
+  content: "\eab0";
+}
+
+.icon-linkedin:before {
+  content: "\eac9";
+}
+
+.icon-monitor:before {
+  content: "\e911";
+}
+
+.icon-phone:before {
+  content: "\e901";
+}
+
+.icon-document-code:before {
+  content: "\e902";
+}
+
+.icon-heart1:before {
+  content: "\e904";
+}
+
+.icon-display:before {
+  content: "\e903";
+}
+
+.icon-fire:before {
+  content: "\e90a";
+}
+
+.icon-bubble:before {
+  content: "\e912";
+}
+
+.icon-heart:before {
+  content: "\e913";
+}
 
 /* Basic */
 
@@ -60,6 +212,24 @@ figure{
 
 /* Animations */
 
+.fade_out{
+    animation-name: fade_out;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-play-state: running;
+}
+
+@keyframes fade_out{
+    from{
+        transform: translateY(0) translateX(0) rotate(-45deg);
+    }
+    to{
+        transform: translateY(.7rem) translateX(.7rem) rotate(-45deg);
+    }
+}
+
 /* Header */
 
 .header{
@@ -67,7 +237,8 @@ figure{
     justify-content: space-between;
     background-color: var(--color_grayScale5);
     position: fixed;
-    width: 100%
+    width: 100%;
+    z-index: 9999
 }
 
 .header .header_logo{
@@ -154,6 +325,83 @@ figure{
 .header .nav ul li:not(:last-child){
                 margin-right: 6rem;
             }
+
+/* Hero */
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://i.pinimg.com/originals/c4/35/d8/c435d8ab77377a71fbf93e45058b48d6.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.hero h1, .hero p, .hero .hero_btn{
+        z-index: 1;
+    }
+
+.hero h1{
+        font-size: 6rem;
+        font-weight: lighter;
+        letter-spacing: 1rem;
+        color: var(--color_brand1);
+        white-space: nowrap;
+    }
+
+.hero p{
+        font-size: 2.5rem;
+        color: var(--color_white);
+        font-weight: lighter;
+    }
+
+.hero .hero_btn{
+        position: absolute;
+        bottom: 1rem;
+        width: 4rem;
+        height: 4rem;
+        transform: rotate(45deg);
+        background-color: var(--color_white)
+    }
+
+.hero .hero_btn i{
+            color: var(--color_grayScale5); 
+            font-size: 2rem;
+            transform: rotate(-45deg);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            position: relative;
+
+        }
+
+.hero .hero_btn a{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+
+        }
+
+.hero:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color_grayScale5);
+    opacity: .75;
+    z-index: 1;
+}
 
 /* About Us */
 
