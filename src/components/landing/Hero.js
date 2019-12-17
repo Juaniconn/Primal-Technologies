@@ -11,7 +11,8 @@ function Hero(){
               <a href="#about_us"></a>
             </div>
           </div>
-      </div>
+          <div className="hero_bg"></div>
+        </div>
     )
 }
 

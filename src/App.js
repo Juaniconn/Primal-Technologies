@@ -4,6 +4,7 @@ import Header from './components/basic/Header'
 import Hero from './components/landing/Hero'
 import About from './components/landing/About'
 import Services from './components/landing/Services'
+import Projects from './components/landing/Projects'
 import Exclusive from './components/landing/Exclusive'
 import Values from './components/landing/Values'
 import Testimonials from './components/landing/Testimonials'
@@ -20,6 +21,7 @@ function App() {
       <Hero/>
       <About/>
       <Services/>
+      <Projects/>
       <Exclusive/>
       <Values/>
       <Testimonials/>

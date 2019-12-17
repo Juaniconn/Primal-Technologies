@@ -1,1 +1,8 @@
 /* Exlusive content */
+
+.exclusive_content{
+    background-color: var(--color_white);
+    & .exclusive_content_leftWrapper{
+        
+    }
+}

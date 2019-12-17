@@ -1,1 +1,37 @@
 /* Services */
+
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color_opacity);
+    padding: 10rem 0;
+    
+    & h2{
+        @apply --h2_style;
+    }
+
+    & .services_wrapperItem{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        & .services_item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & i{
+                color: var(--color_white);
+                font-size: 6rem;
+                margin-bottom: 1rem;
+            }
+    
+            & p{
+                color: var(--color_white);
+                font-size: 1.8rem;
+            }
+        }
+    }
+}

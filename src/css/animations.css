@@ -17,3 +17,33 @@
         transform: translateY(.7rem) translateX(.7rem) rotate(-45deg);
     }
 }
+
+.slideshow_gallery{
+    animation: slideshow_gallery 20s linear infinite;
+}
+
+@keyframes slideshow_gallery{
+    from{
+        transform: translateY(0rem);
+    }
+
+    20%{
+        transform: translateY(20rem);
+    }
+
+    40%{
+        transform: translateY(40rem);
+    }
+
+    60%{
+        transform: translateY(60rem);
+    }
+
+    80%{
+        transform: translateY(80rem);
+    }
+
+    to{
+        transform: translateY(80rem);
+    }
+}

@@ -13,7 +13,15 @@
     --color_grayScale4: #343434;
     --color_grayScale5: #0A0A0A;
 
+    --color_opacity: rgba(10, 10, 10, 0.75);
     --color_white: #FFF;
+
+    --h2_style: {
+        font-size: 2.5rem;
+        font-weight: normal;
+        margin-bottom: 10rem;
+        color: var(--color_brand1);
+    };
 
     --header_nav_btn--before: {
         content: "";
@@ -46,6 +54,13 @@
 @custom-media --large (width >= 1024px);
 
 /* Icon Font */
+
+@font-face{
+  font-family: 'Revolution';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/REVOLUTION.ttf');
+}
 
 @font-face {
   font-family: 'icomoon';

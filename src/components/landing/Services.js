@@ -7,23 +7,23 @@ function Services(){
             <h2>Services</h2>
             <div className="services_wrapperItem">
               <div className="services_item">
-                <i></i>
+                <i className="icon-align-right"></i>
                 <p>Legacy Code</p>
               </div>
               <div className="services_item">
-                <i></i>
+                <i className="icon-cogs"></i>
                 <p>Development</p>
               </div>
               <div className="services_item">
-                <i></i>
+                <i className="icon-document-code"></i>
                 <p>Software</p>
               </div>
               <div className="services_item">
-                <i></i>
+                <i className="icon-flow-switch"></i>
                 <p>Outsourcing</p>
               </div>
               <div className="services_item">
-                <i></i>
+                <i className="icon-phone"></i>
                 <p>Mobile</p>
               </div>
             </div>
