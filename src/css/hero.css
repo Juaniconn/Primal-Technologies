@@ -1,1 +1,10 @@
 /* Hero */
+
+.hero{
+    & .hero_btn{
+        & i{
+            font-size: 5rem;
+            color: red;
+        }
+    }
+}

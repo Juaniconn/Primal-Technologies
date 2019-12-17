@@ -7,7 +7,7 @@ function Hero(){
             <h1>Transforming Companies</h1>
             <p>The path for the future</p>
             <div className="hero_btn">
-              <i className="icon"></i>
+              <i className="icon-cheveron-down"></i>
             </div>
           </div>
       </div>
