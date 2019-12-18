@@ -17,20 +17,20 @@ import Footer from './components/basic/Footer'
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Hero/>
-      <About/>
-      <Services/>
-      <Projects/>
-      <Exclusive/>
-      <Values/>
-      {/* <Testimonials/> */}
-      {/* <News/> */}
-      <Newsletter/>
-      <Contact/>
-      <Map/>
-      <Footer/>
-  </div>
+      <Header />
+      <Hero />
+      <About />
+      <Services />
+      <Projects />
+      <Exclusive />
+      <Values />
+      {/*<Testimonials/>*/}
+      {/*<News/>*/}
+      <Newsletter />
+      <Contact />
+      <Map />
+      <Footer />
+    </div>
   );
 }
 

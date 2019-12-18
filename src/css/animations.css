@@ -1,49 +1,108 @@
 /* Animations */
 
-.fade_out{
-    animation-name: fade_out;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
-    animation-play-state: running;
+/* Animations */
+
+.glitch::before {
+	display: block;
+	content: attr(data-glitch);
+	text-transform: uppercase;
+	position: absolute;
+	opacity: 0.8;
+	color: #0ff;
+	z-index: -1;
 }
 
-@keyframes fade_out{
-    from{
-        transform: translateY(0) translateX(0) rotate(-45deg);
-    }
-    to{
-        transform: translateY(.7rem) translateX(.7rem) rotate(-45deg);
-    }
+.glitch::after {
+	content: attr(data-glitch);
+	text-transform: uppercase;
+	position: absolute;
+	border: 1px solid black;
+	top: 2.2rem;
+	display: flex;
+	opacity: 0.8;
+	color: #f0f;
+	z-index: -2;
 }
 
-.slideshow_gallery{
-    animation: slideshow_gallery 20s linear infinite;
+.glitch:hover::before {
+	animation: glitch 0.3s cubic-bezier(0.15, 0.36, 0.35, 0.84) both 5;
 }
 
-@keyframes slideshow_gallery{
-    from{
-        transform: translateY(0rem);
-    }
+.glitch:hover::after {
+	animation: glitch 0.3s cubic-bezier(0.15, 0.36, 0.35, 0.84) reverse both 5;
+}
 
-    20%{
-        transform: translateY(20rem);
-    }
+@media only screen and (max-width: 400px) {
+	.glitch {
+		font-size: 3em;
+	}
+}
 
-    40%{
-        transform: translateY(40rem);
-    }
+@keyframes glitch {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translate(-5px, 5px);
+	}
+	40% {
+		transform: translate(-5px, -5px);
+	}
+	60% {
+		transform: translate(5px, 5px);
+	}
+	80% {
+		transform: translate(5px, -5px);
+	}
+	to {
+		transform: translate(0);
+	}
+}
 
-    60%{
-        transform: translateY(60rem);
-    }
+.fade_out {
+	animation-name: fade_out;
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+	animation-play-state: running;
+}
 
-    80%{
-        transform: translateY(80rem);
-    }
+@keyframes fade_out {
+	from {
+		transform: translateY(0) translateX(0) rotate(-45deg);
+	}
+	to {
+		transform: translateY(0.7rem) translateX(0.7rem) rotate(-45deg);
+	}
+}
 
-    to{
-        transform: translateY(80rem);
-    }
+.slideshow_gallery {
+	animation: slideshow_gallery 20s linear infinite;
+}
+
+@keyframes slideshow_gallery {
+	from {
+		transform: translateY(0rem);
+	}
+
+	20% {
+		transform: translateY(20rem);
+	}
+
+	40% {
+		transform: translateY(40rem);
+	}
+
+	60% {
+		transform: translateY(60rem);
+	}
+
+	80% {
+		transform: translateY(80rem);
+	}
+
+	to {
+		transform: translateY(80rem);
+	}
 }

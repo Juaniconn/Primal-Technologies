@@ -1,48 +1,29 @@
-import React from 'react'
-import { isCompositeComponent } from 'react-dom/test-utils'
-
+import React from 'react';
+import PrimalLogo from './../../img/primal_logo.gif'
 
 function Header() {
-    return(
+    const menuItems = ["About", "Services", "Portfolio", "Contact"];
+
+    return (
         <header className="header">
             <div className="container">
-                <a className="header_logo" href="#"></a>
-                <nav className="nav">
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li id="test"><a href="#">Services</a>
-                            <ul id="test2" className="nav_servicesHidden">
-                                <li><a href="#">Legacy Code</a></li>
-                                <li><a href="#">Development</a></li>
-                                <li><a href="#">Outsourcing</a></li>
-                                <li><a href="#">Software</a></li>
-                                <li><a href="#">Mobile</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Contact</a></li>
+                <a href="#">
+                    <img className="logo" src={PrimalLogo} alt="Primal Logo" />
+                </a>
+                <nav>
+                    <ul className="nav">
+                        {menuItems.map(item => {
+                            return (
+                                <li className="navItem">
+                                    <a className="glitch link" href={`#${item}`} data-glitch={item}>{item}</a>
+                                </li>
+                            );
+                        })}
                     </ul>
                 </nav>
             </div>
         </header>
     )
 }
-
-const test = document.getElementById('test')
-const test2 = document.getElementById("test2")
-
-document.addEventListener('DOMContentLoaded', (event) =>{
-    if(test){
-        test.addEventListener("mouseover", (event) => {
-            console.log("test")
-        })
-    }
-
-    console.log(test)
-    console.log("hola")
-})
-
-
 
 export default Header;
