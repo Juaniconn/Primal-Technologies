@@ -1,8 +1,29 @@
 /* Exlusive content */
 
 .exclusive_content{
+    display: flex;
+    justify-content: space-between;
     background-color: var(--color_white);
+    padding: 10rem 0;
     & .exclusive_content_leftWrapper{
-        
+        width: 70%;
+
+        & h2{
+            font-size: 2rem;
+            margin-bottom: 1em;
+        }
+
+        & p{
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+        }
+
+        & a{
+            display: inline-flex;
+            @apply --btn;
+        }
+    }
+    & img{
+        width: 25%;
     }
 }

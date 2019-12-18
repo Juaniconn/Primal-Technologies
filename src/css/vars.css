@@ -13,7 +13,7 @@
     --color_grayScale4: #343434;
     --color_grayScale5: #0A0A0A;
 
-    --color_opacity: rgba(10, 10, 10, 0.75);
+    --color_opacity: rgba(10, 10, 10, 0.8);
     --color_white: #FFF;
 
     --h2_style: {
@@ -43,6 +43,16 @@
         right: 0;
         height: .3rem;
         background-color: var(--color_brand1);
+    };
+
+    --btn: {
+      color: var(--color_white);
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border: .2rem solid var(--color_brand1);
+      color: var(--color_brand1);
+      font-size: 1.6rem;
+      font-weight: bold;
     };
 }
 

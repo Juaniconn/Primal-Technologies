@@ -24,8 +24,8 @@ function App() {
       <Projects/>
       <Exclusive/>
       <Values/>
-      <Testimonials/>
-      <News/>
+      {/* <Testimonials/> */}
+      {/* <News/> */}
       <Newsletter/>
       <Contact/>
       <Map/>
