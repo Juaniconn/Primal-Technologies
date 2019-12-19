@@ -21,6 +21,7 @@ function App() {
       <Hero />
       <About />
       <Services />
+      <Footer />
       {/*<Projects />
       <Exclusive />
       <Values />
@@ -28,8 +29,7 @@ function App() {
       <News/>
       <Newsletter />
       <Contact />
-      <Map />
-      <Footer />*/}
+      <Map />*/}
     </div>
   );
 }

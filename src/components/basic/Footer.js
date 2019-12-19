@@ -1,44 +1,53 @@
 import React from 'react'
 
-function Footer(){
-    return(
-        <footer className="footer">
-          <div className="container">
-            <img src="https://i.ibb.co/0C5VbpB/Primal-logo.png" alt=""/>
-            <div className="footer_icons">
+function Footer() {
+  const icons = [
+    { icon: 'icon-twitter' },
+    { icon: 'icon-youtube' },
+    { icon: 'icon-instagram' },
+    { icon: 'icon-facebook2' },
+    { icon: 'icon-linkedin' },
+  ];
+
+  const footerLinks = [
+    { name: 'Home' },
+    { name: 'About' },
+    { name: 'Services' },
+    { name: 'Portfolio' },
+    { name: 'Contact' },
+  ]
+
+  return (
+    <footer className="footer">
+      <div className="footer_container">
+        <img src="https://i.ibb.co/0C5VbpB/Primal-logo.png" alt="" />
+        <div className="footer_icons">
+          {icons.map(icon => {
+            return (
               <div className="footer_iconItem">
-                <a href="#"><i className="icon-twitter"></i></a>
+                <a href="#"><i className={icon.icon}></i></a>
               </div>
-              <div className="footer_iconItem">
-                <a href="#"><i className="icon-youtube"></i></a>
-              </div>
-              <div className="footer_iconItem">
-                <a href="#"><i className="icon-instagram"></i></a>
-              </div>
-              <div className="footer_iconItem">
-                <a href="#"><i className="icon-facebook2"></i></a>
-              </div>
-              <div className="footer_iconItem">
-                <a href="#"><i className="icon-linkedin"></i></a>
-              </div>
-            </div>
-            <div className="footer_nav">
-              <ul>
-                <li><a href="#">Homa</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-            <div className="footer_copyright">
-              <p>© PRIMAL TECHNOLOGIES 2019</p>
-              <p>Made with love by greatest people</p>
-            </div>
-          </div>
-        </footer>
-    )
+            );
+          })}
+        </div>
+        <div className="footer_nav">
+          <ul>
+            {footerLinks.map(link => {
+              return (
+                <li>
+                  <a href={`#${link.name}`}>{link.name}</a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="footer_copyright">
+          <p>© PRIMAL TECHNOLOGIES 2019</p>
+          <p>Made with love by greatest people</p>
+        </div>
+      </div>
+    </footer>
+  )
 }
 
 export default Footer
