@@ -2,7 +2,7 @@
 
 .services {
 	width: 100%;
-	height: 30vh;
+	height: 50vh;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -34,14 +34,14 @@
 
 .servicesMenu {
 	height: 70%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	display: grid;
+	grid-template: 'a b' 'c d';
 	color: white;
 }
 
 .serviceItem {
 	cursor: pointer;
+	margin: 1rem 0rem;
 }
 
 .serviceIcon {
@@ -53,6 +53,20 @@
 }
 
 @media (--medium) {
+	.serviceIcon {
+		font-size: 6rem;
+	}
+
+	.service_title {
+		font-size: 3rem;
+	}
+}
+
+@media (--large) {
+	.servicesMenu {
+		grid-template: 'a b c d';
+	}
+
 	.serviceIcon {
 		font-size: 8rem;
 	}
