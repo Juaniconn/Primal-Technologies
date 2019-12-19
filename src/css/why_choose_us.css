@@ -1,1 +1,76 @@
 /* Why choose us? */
+
+.values {
+	width: 100%;
+	min-height: 90vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: white;
+}
+
+.values_container {
+	width: 80%;
+	height: 90%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+}
+
+.values_title_container {
+	height: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 4rem;
+}
+
+.values_title {
+	color: var(--color_brand1);
+	font-size: 4rem;
+}
+
+.values_itemsWrapper {
+	height: 70%;
+	display: grid;
+	grid-template: 'a b' 'c d' ' f g';
+	gap: 4rem;
+}
+
+.value_icon {
+	font-size: 5rem;
+}
+
+.value_title {
+	font-size: 1.6rem;
+	margin: 1rem 0rem;
+}
+
+.value_body {
+	font-size: 1.2rem;
+}
+
+@media (--medium) {
+	.values_itemsWrapper {
+		height: 70%;
+		display: grid;
+		grid-template: 'a b c' 'd f g';
+		gap: 4rem;
+	}
+
+	.value_icon {
+		font-size: 8rem;
+	}
+
+	.value_title {
+		font-size: 2.2rem;
+		margin: 1rem 0rem;
+	}
+
+	.value_body {
+		font-size: 1.4rem;
+	}
+}
