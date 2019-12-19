@@ -28,6 +28,8 @@
 	src: url('./fonts/REVOLUTION.ttf');
 }
 
+/*TODO: Add SVG*/
+
 @font-face {
 	font-family: 'icomoon';
 	src: url('./fonts/icomoon.eot?x39n04');
@@ -481,44 +483,57 @@ figure {
 
 /* Services */
 
-.services{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: var(--color_opacity);
-    padding: 10rem 0
+.services {
+	width: 100%;
+	height: 30vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: black
 }
 
-.services h2{
-  font-size: 2.5rem;
-  font-weight: normal;
-  margin-bottom: 10rem;
-  color: var(--color_brand1);
-    }
+.services .services_container {
+		width: 80%;
+		height: 90%;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		flex-direction: column
+	}
 
-.services .services_wrapperItem{
-        display: flex;
-        justify-content: space-between;
-        width: 100%
-    }
+.services .services_container .servicesTitleContainer {
+			height: 30%;
+			display: flex;
+			justify-content: center;
+			align-items: center
+		}
 
-.services .services_wrapperItem .services_item{
-            display: flex;
-            flex-direction: column;
-            align-items: center
-        }
+.services .services_container .servicesTitleContainer .servicesTitle {
+				color: var(--color_brand1);
+				font-size: 4rem;
+			}
 
-.services .services_wrapperItem .services_item i{
-                color: var(--color_white);
-                font-size: 6rem;
-                margin-bottom: 1rem;
-            }
+.servicesMenu {
+	height: 70%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
 
-.services .services_wrapperItem .services_item p{
-                color: var(--color_white);
-                font-size: 1.8rem;
-            }
+.serviceItem {
+	cursor: pointer;
+}
+
+.serviceIcon {
+	font-size: 4rem;
+}
+
+.service_title {
+	font-size: 2rem;
+}
 
 /* Projects */
 
@@ -958,6 +973,13 @@ figure {
 	.contentContainer {
 		display: grid;
 		grid-template: 'a b c';
+	}
+	.serviceIcon {
+		font-size: 8rem;
+	}
+
+	.service_title {
+		font-size: 3rem;
 	}
 }
 
