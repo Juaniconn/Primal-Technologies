@@ -28,12 +28,3 @@ figure {
 	margin: 0;
 	padding: 0;
 }
-
-.container {
-	width: 80%;
-	margin: 0px 10%;
-	padding: 1rem 0rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}

@@ -6,7 +6,7 @@ function Header() {
 
     return (
         <header className="header">
-            <div className="container">
+            <div className="header_container">
                 <a href="#">
                     <img className="logo" src={PrimalLogo} alt="Primal Logo" />
                 </a>

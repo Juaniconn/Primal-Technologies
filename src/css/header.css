@@ -31,3 +31,11 @@
 		}
 	}
 }
+
+.header_container {
+	width: 80%;
+	margin: 0px 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

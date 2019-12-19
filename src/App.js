@@ -19,17 +19,17 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
-      <About />
+      {/*<About />
       <Services />
       <Projects />
       <Exclusive />
       <Values />
-      {/*<Testimonials/>*/}
-      {/*<News/>*/}
+      <Testimonials/>
+      <News/>
       <Newsletter />
       <Contact />
       <Map />
-      <Footer />
+      <Footer />*/}
     </div>
   );
 }
