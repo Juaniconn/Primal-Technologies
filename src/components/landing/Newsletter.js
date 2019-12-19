@@ -10,7 +10,7 @@ function Newsletter() {
         <div className="newsletter_form_container">
           <form className="newsletter_form">
             <input className="newsletter_emailInput" type="email" placeholder="Enter your email" />
-            <input className="newsletter_btn" type="submit" value="Suscribe" />
+            <input className="newsletter_btn" type="submit" value="Subscribe" />
           </form>
           <p className="simple_advice">*Trust us, we'll never send you spam</p>
         </div>

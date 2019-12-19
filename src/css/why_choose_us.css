@@ -51,6 +51,7 @@
 
 .value_body {
 	font-size: 1.2rem;
+	text-align: start;
 }
 
 @media (--medium) {

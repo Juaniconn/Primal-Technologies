@@ -21,12 +21,12 @@ function App() {
       <Hero />
       <About />
       <Services />
+      <Exclusive />
       <Values />
       <Newsletter />
       <Map />
       <Footer />
       {/*<Projects />
-      <Exclusive />
       <Testimonials/>
       <News/>
       <Contact />*/}
