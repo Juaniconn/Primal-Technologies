@@ -436,7 +436,7 @@ figure {
 
 .hero_title {
 	font-size: 2.5rem;
-	letter-spacing: 2rem;
+	letter-spacing: 1rem;
 	color: #00b6e2;
 	font-family: 'Revolution', sans-serif;
 	margin-bottom: 1rem;
@@ -519,7 +519,7 @@ figure {
 
 .services {
 	width: 100%;
-	height: 50vh;
+	height: 70vh;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -530,7 +530,7 @@ figure {
 
 .services .services_container {
 		width: 80%;
-		height: 90%;
+		height: 70%;
 		display: flex;
 		justify-content: center;
 		text-align: center;
@@ -553,6 +553,7 @@ figure {
 	height: 70%;
 	display: grid;
 	grid-template: 'a b' 'c d';
+	align-items: center;
 	color: white;
 }
 
@@ -769,44 +770,70 @@ figure {
 
 /* Newsletter */
 
-.newsletter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 10rem 0;
-    background-color: var(--color_opacity)
+.newsletter {
+	width: 100%;
+	height: 50vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
-.newsletter h2{
-  font-size: 2.5rem;
-  font-weight: normal;
-  margin-bottom: 10rem;
-  color: var(--color_brand1);
-        margin-bottom: 2rem;
-    }
+.newsletter_container {
+	width: 80%;
+	height: 90%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+}
 
-.newsletter .newsletter_form{
-        width: 80%
-    }
+.newsletter_title_container {
+	height: 30%;
+}
 
-.newsletter .newsletter_form .newsletter_emailInput{
-            padding: .8rem 1.5rem;
-            border: none;
-            font-size: 1.4rem;
-            width: 80%;
-        }
+.newsletter_title {
+	color: white;
+	font-size: 3.5rem;
+}
 
-.newsletter .newsletter_form .newsletter_btn{
-            border: none;
-            background-color: var(--color_brand1);
-            color: white;
-            display: inline-block;
-            height: 3.2rem;
-            letter-spacing: .2rem;
-            font-weight: normal;
-            width: 20%;
-        }
+.newsletter_form_container {
+	height: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.newsletter_form {
+	width: 100%;
+}
+
+.newsletter_emailInput {
+	padding: 0.8rem 1.5rem;
+	border: none;
+	font-size: 2rem;
+	width: 60%;
+}
+
+.newsletter_btn {
+	border: none;
+	background-color: var(--color_brand1);
+	color: white;
+	display: inline-block;
+	letter-spacing: 0.2rem;
+	font-weight: normal;
+	width: 40%;
+	padding: 0.8rem 1.5rem;
+	font-size: 2rem;
+}
+
+.simple_advice {
+	color: white;
+	font-size: 1.4rem;
+	margin-top: 1rem;
+}
 
 /* Conctact */
 
@@ -1040,6 +1067,13 @@ figure {
 
 	.service_title {
 		font-size: 3rem;
+	}
+	.newsletter_form {
+		width: 80%;
+	}
+
+	.newsletter_btn {
+		width: 30%;
 	}
 		.footer .footer_icons {
 			width: 80%;

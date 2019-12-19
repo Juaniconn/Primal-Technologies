@@ -23,7 +23,7 @@ class Map extends Component {
 
   render() {
     return (
-      <div className="map">
+      <section className="map">
         <div className="maps_container">
           <div className="map_nodeWrapper"><iframe width="100%" src="https://maps.google.com/maps?width=100%&height=400&hl=es&coord=31.739669, -106.427940&q=Valle%20de%20Ju%C3%A1rez%206445%2C%20San%20Lorenzo%20Cd%20Ju%C3%A1rez%2C%20Chih.+(Primal%20Technologies)&ie=UTF8&t=&z=17&iwloc=B&output=embed"><a href="https://www.mapsdirections.info/calcular-ruta.html"></a></iframe></div>
           <div
@@ -41,7 +41,7 @@ class Map extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     )
   }
 }
