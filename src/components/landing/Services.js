@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Services = () => {
-  const [selected, setSelected] = useState(0);
-
   const options = [
     { title: 'Legacy Code', icon: 'icon-align-right' },
     { title: 'Custom Software', icon: 'icon-document-code' },
@@ -19,7 +17,7 @@ const Services = () => {
         <div className="servicesMenu">
           {options.map(option => {
             return (
-              <div className="serviceItem">
+              <div key={option.title} className="serviceItem">
                 <i className={`${option.icon} serviceIcon`}></i>
                 <p className="service_title">{option.title}</p>
               </div>

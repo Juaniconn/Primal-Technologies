@@ -22,10 +22,10 @@ function Footer() {
       <div className="footer_container">
         <img src="https://i.ibb.co/0C5VbpB/Primal-logo.png" alt="" />
         <div className="footer_icons">
-          {icons.map(icon => {
+          {icons.map((icon, i) => {
             return (
-              <div className="footer_iconItem">
-                <a href="#"><i className={icon.icon}></i></a>
+              <div key={i} className="footer_iconItem">
+                <a href="/"><i className={icon.icon}></i></a>
               </div>
             );
           })}
@@ -34,7 +34,7 @@ function Footer() {
           <ul>
             {footerLinks.map(link => {
               return (
-                <li>
+                <li key={link.name}>
                   <a href={`#${link.name}`}>{link.name}</a>
                 </li>
               );

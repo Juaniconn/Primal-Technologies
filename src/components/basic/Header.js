@@ -7,14 +7,14 @@ function Header() {
     return (
         <header className="header">
             <div className="header_container">
-                <a href="#">
+                <a href="#Home">
                     <img className="logo" src={PrimalLogo} alt="Primal Logo" />
                 </a>
                 <nav>
                     <ul className="nav">
                         {menuItems.map(item => {
                             return (
-                                <li className="navItem">
+                                <li key={item} className="navItem">
                                     <a className="glitch link" href={`#${item}`} data-glitch={item}>{item}</a>
                                 </li>
                             );

@@ -12,8 +12,8 @@ const Hero = (props) => {
         </div>
 
         <div className="hero_btn">
-          <i className="hero_icon icon-cheveron-down fade_out"></i>
-          <a href="#About"></a>
+
+          <a href="#About"><i className="hero_icon icon-cheveron-down fade_out"></i></a>
         </div>
       </div>
     </section>

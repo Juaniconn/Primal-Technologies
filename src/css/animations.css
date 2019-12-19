@@ -1,7 +1,5 @@
 /* Animations */
 
-/* Animations */
-
 .glitch::before {
 	display: block;
 	content: attr(data-glitch);
@@ -104,5 +102,41 @@
 
 	to {
 		transform: translateY(80rem);
+	}
+}
+
+.fade_outMap {
+	animation-name: fade_outMap;
+	animation-fill-mode: forwards;
+	animation-duration: 450ms;
+	animation-timing-function: ease-out;
+}
+
+@keyframes fade_outMap {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+		z-index: 0;
+	}
+}
+
+.fade_inMap {
+	animation-name: fade_inMap;
+	animation-fill-mode: forwards;
+	animation-duration: 450ms;
+	animation-timing-function: ease-out;
+}
+
+@keyframes fade_inMap {
+	from {
+		opacity: 0;
+		z-index: 1;
+	}
+
+	to {
+		opacity: 1;
 	}
 }
