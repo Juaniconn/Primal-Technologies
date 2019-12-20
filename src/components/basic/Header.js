@@ -1,29 +1,49 @@
-import React from 'react';
+import React, {Component} from 'react';
 import PrimalLogo from './../../img/primal_logo.gif'
 
-function Header() {
-    const menuItems = ["About", "Services", "Portfolio", "Contact"];
+class Header extends Component {
+    
+    constructor(){
+        super()
+        this.hideref = React.createRef()
+        this.showNavbar = this.showNavbar.bind( this )
+    }
 
-    return (
-        <header className="header">
-            <div className="header_container">
-                <a href="#Home">
-                    <img className="logo" src={PrimalLogo} alt="Primal Logo" />
-                </a>
-                <nav>
-                    <ul className="nav">
-                        {menuItems.map(item => {
-                            return (
-                                <li key={item} className="navItem">
-                                    <a className="glitch link" href={`#${item}`} data-glitch={item}>{item}</a>
-                                </li>
-                            );
-                        })}
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    )
+    showNavbar(){
+        console.log(this.hideref)
+        if(!this.hideref.current.classList.contains('show_Navbar')){
+            this.hideref.current.classList.add('show_Navbar')
+            this.hideref.current.classList.remove('hide_Navbar')
+        } else{
+            this.hideref.current.classList.remove('show_Navbar')
+            this.hideref.current.classList.add('hide_Navbar')
+        }
+    }
+
+    render(){
+        const menuItems = ["About", "Services", "Portfolio", "Contact"];
+        return (
+            <header className="header">
+                <div className="header_container">
+                    <a href="#Home">
+                        <img className="logo" src={PrimalLogo} alt="Primal Logo" />
+                    </a>
+                    <nav ref = { this.hideref }>
+                        <ul className="nav">
+                            {menuItems.map(item => {
+                                return (
+                                    <li key={item} className="navItem">
+                                        <a className="glitch link" href={`#${item}`} data-glitch={item}>{item}</a>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </nav>
+                    <i onClick = { this.showNavbar } className='icon-menu hamburger_bar'></i>
+                </div>
+            </header>
+        )
+    }
 }
 
 export default Header;
