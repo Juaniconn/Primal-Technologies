@@ -24,7 +24,62 @@ p {
 	margin: 0;
 }
 
-figure {
-	margin: 0;
-	padding: 0;
+.brand_color {
+	color: var(--color_brand1);
+}
+
+.white {
+	color: white;
+}
+
+.black {
+	color: black;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 10rem 0rem;
+}
+
+.col {
+	flex-direction: column;
+}
+
+.row {
+	flex-direction: row;
+}
+
+.container {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	text-align: center;
+}
+
+.section_title {
+	font-size: 3rem;
+	font-family: 'Revolution', sans-serif;
+	margin-bottom: 1rem;
+}
+
+.section_subtitle {
+	font-size: 2rem;
+}
+
+@media (--medium) {
+	.container {
+		width: 80%;
+	}
+
+	.section_title {
+		font-size: 4rem;
+	}
+
+	.section_subtitle {
+		font-size: 2.2rem;
+	}
 }

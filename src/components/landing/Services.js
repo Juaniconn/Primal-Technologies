@@ -9,12 +9,12 @@ const Services = () => {
   ];
 
   return (
-    <section id="Services" className="services">
-      <div className="services_container">
-        <div className="servicesTitleContainer">
-          <p className="servicesTitle">Services</p>
+    <section id="Services">
+      <div className="container col services_container">
+        <div>
+          <p className="section_title brand_color">Services</p>
         </div>
-        <div className="servicesMenu">
+        <div className="servicesMenu white">
           {options.map(option => {
             return (
               <div key={option.title} className="serviceItem">

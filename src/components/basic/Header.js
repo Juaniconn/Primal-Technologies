@@ -1,26 +1,25 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PrimalLogo from './../../img/primal_logo.gif'
 
 class Header extends Component {
-    
-    constructor(){
+
+    constructor() {
         super()
         this.hideref = React.createRef()
-        this.showNavbar = this.showNavbar.bind( this )
+        this.showNavbar = this.showNavbar.bind(this)
     }
 
-    showNavbar(){
-        console.log(this.hideref)
-        if(!this.hideref.current.classList.contains('show_Navbar')){
+    showNavbar() {
+        if (!this.hideref.current.classList.contains('show_Navbar')) {
             this.hideref.current.classList.add('show_Navbar')
             this.hideref.current.classList.remove('hide_Navbar')
-        } else{
+        } else {
             this.hideref.current.classList.remove('show_Navbar')
             this.hideref.current.classList.add('hide_Navbar')
         }
     }
 
-    render(){
+    render() {
         const menuItems = ["About", "Services", "Portfolio", "Contact"];
         return (
             <header className="header">
@@ -28,7 +27,7 @@ class Header extends Component {
                     <a href="#Home">
                         <img className="logo" src={PrimalLogo} alt="Primal Logo" />
                     </a>
-                    <nav ref = { this.hideref }>
+                    <nav ref={this.hideref}>
                         <ul className="nav">
                             {menuItems.map(item => {
                                 return (
@@ -39,7 +38,7 @@ class Header extends Component {
                             })}
                         </ul>
                     </nav>
-                    <i onClick = { this.showNavbar } className='icon-menu hamburger_bar'></i>
+                    <i onClick={this.showNavbar} className='icon-menu hamburger_bar'></i>
                 </div>
             </header>
         )

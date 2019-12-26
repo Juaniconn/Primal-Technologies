@@ -24,12 +24,12 @@ function App() {
       <Exclusive />
       <Values />
       <Newsletter />
+      <Contact />
       <Map />
       <Footer />
       {/*<Projects />
       <Testimonials/>
-      <News/>
-      <Contact />*/}
+      <News/>*/}
     </div>
   );
 }

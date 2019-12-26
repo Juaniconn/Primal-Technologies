@@ -2,7 +2,7 @@ import React from 'react'
 
 function Exclusive() {
     return (
-        <div className="exclusive_content">
+        <section className="exclusive_content">
             <div className="exclusive_container">
                 <div className="exclusive_content_leftWrapper">
                     <h2>Looking for exclusive content?</h2>
@@ -11,7 +11,7 @@ function Exclusive() {
                 </div>
                 <img src="https://i.ibb.co/sV7tdjB/portfolio-photo3.jpg" alt="img" />
             </div>
-        </div>
+        </section>
     )
 }
 

@@ -2,10 +2,10 @@ import React from 'react'
 
 function Newsletter() {
   return (
-    <section className="newsletter">
-      <div className="newsletter_container">
-        <div className="newsletter_title_container">
-          <h2 className="newsletter_title">Stay informed</h2>
+    <section>
+      <div className="container col newsletter_container">
+        <div className="">
+          <h2 className="section_title white">Stay informed</h2>
         </div>
         <div className="newsletter_form_container">
           <form className="newsletter_form">

@@ -5,10 +5,10 @@ const Hero = (props) => {
     <section id="Home" className="hero">
       <div className="hero_bg" />
       <div className="overlay" />
-      <div className="hero_container">
-        <div className="hero_main">
-          <h1 className="hero_title">Transforming Companies</h1>
-          <p className="hero_subtitle">The path for the future</p>
+      <div className="container row">
+        <div>
+          <h1 id="hero_title" className="section_title brand_color">Transforming Companies</h1>
+          <p className="section_subtitle white">The path for the future</p>
         </div>
 
         <div className="hero_btn">

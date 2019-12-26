@@ -1,6 +1,53 @@
 /* Services */
 
-.services {
+.services_container {
+	align-items: center;
+}
+
+.servicesMenu {
+	display: grid;
+	grid-template: 'a' 'b' 'c' 'd';
+	align-items: center;
+	gap: 3rem;
+}
+
+.serviceItem {
+	cursor: pointer;
+	margin: 1rem 0rem;
+	width: 200px;
+}
+
+.serviceIcon {
+	font-size: 6rem;
+}
+
+.service_title {
+	font-size: 2rem;
+}
+
+@media (--medium) {
+	.servicesMenu {
+		grid-template: 'a b' 'c d';
+		gap: 4rem;
+	}
+}
+
+@media (--large) {
+	.servicesMenu {
+		grid-template: 'a b c d';
+		gap: 6rem;
+	}
+
+	.serviceIcon {
+		font-size: 8rem;
+	}
+
+	.service_title {
+		font-size: 3rem;
+	}
+}
+
+/*.services {
 	width: 100%;
 	min-height: 70vh;
 	position: relative;
@@ -10,13 +57,7 @@
 	flex-direction: column;
 	background-color: black;
 
-	& .services_container {
-		width: 80%;
-		height: 80%;
-		display: flex;
-		justify-content: center;
-		text-align: center;
-		flex-direction: column;
+	& 
 
 		& .servicesTitleContainer {
 			height: 40%;
@@ -33,25 +74,14 @@
 	}
 }
 
-.servicesMenu {
-	height: 60%;
-	display: grid;
-	grid-template: 'a b' 'c d';
-	align-items: center;
-	color: white;
-}
 
-.serviceItem {
-	cursor: pointer;
-	margin: 1rem 0rem;
-}
 
-.serviceIcon {
-	font-size: 4rem;
-}
+
+
+
 
 .service_title {
-	font-size: 2rem;
+	font-size: 1.8rem;
 }
 
 @media (--medium) {
@@ -77,3 +107,4 @@
 		font-size: 3rem;
 	}
 }
+*/
