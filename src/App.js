@@ -7,8 +7,8 @@ import Services from './components/landing/Services'
 import Projects from './components/landing/Projects'
 import Exclusive from './components/landing/Exclusive'
 import Values from './components/landing/Values'
-import Testimonials from './components/landing/Testimonials'
-import News from './components/landing/News';
+//import Testimonials from './components/landing/Testimonials'
+//import News from './components/landing/News';
 import Newsletter from './components/landing/Newsletter'
 import Contact from './components/landing/Contact'
 import Map from './components/landing/Map'
@@ -21,14 +21,14 @@ function App() {
       <Hero />
       <About />
       <Services />
+      <Projects />
       <Exclusive />
       <Values />
       <Newsletter />
       <Contact />
       <Map />
       <Footer />
-      {/*<Projects />
-      <Testimonials/>
+      {/*<Testimonials/>
       <News/>*/}
     </div>
   );

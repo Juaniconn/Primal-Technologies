@@ -1,9 +1,6 @@
 import React from 'react'
-import useWindowSize from './../utils/useWindowSize';
 
 function Values() {
-
-    const [width, height] = useWindowSize();
     const defalutText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.';
 
     const values = [
@@ -16,18 +13,16 @@ function Values() {
     ];
 
     return (
-        <section className="white">
-            <div className="container col text_center">
-                <div className="values_title_container">
-                    <h2 className="section_title brand_color">Why choose us?</h2>
-                </div>
-                <div className="values_itemsWrapper">
-                    {values.map(value => {
+        <section>
+            <div className="container flex flex-d-col ta-center">
+                <h2 className="section-title brand">Why choose us?</h2>
+                <div className="values_container white">
+                    {values.map((value, i) => {
                         return (
-                            <div key={value.text} className="values_item">
+                            <div key={i}>
                                 <i className={`${value.icon} value_icon`}></i>
                                 <h3 className="value_title">{value.title}</h3>
-                                {(width >= 768) ? <p className="value_body">{value.body}</p> : null}
+                                <p className="value_body">{value.body}</p>
                             </div>
                         );
                     })}

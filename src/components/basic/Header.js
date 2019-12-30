@@ -22,13 +22,13 @@ class Header extends Component {
     render() {
         const menuItems = ["About", "Services", "Portfolio", "Contact"];
         return (
-            <header className="header">
-                <div className="header_container">
+            <header className="flex flex-jc-center header">
+                <div className="container flex flex-jc-sb flex-ai-center">
                     <a href="#Home">
                         <img className="logo" src={PrimalLogo} alt="Primal Logo" />
                     </a>
                     <nav ref={this.hideref}>
-                        <ul className="nav">
+                        <ul className="flex flex-jc-center flex-ai-center nav">
                             {menuItems.map(item => {
                                 return (
                                     <li key={item} className="navItem">

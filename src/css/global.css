@@ -1,0 +1,168 @@
+.border-b {
+	border: 1px solid black;
+}
+
+.border-w {
+	border: 1px solid white;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 10rem 0rem;
+}
+
+.brand {
+	color: var(--color_brand1);
+}
+
+.white {
+	color: white;
+}
+
+.black {
+	color: black;
+}
+
+.bg-white {
+	background-color: white;
+}
+
+.bg-black {
+	background-color: black;
+}
+
+.bg-brand {
+	background-color: var(--color-brand5);
+}
+
+.container {
+	width: 90%;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-d-row {
+	flex-direction: row;
+}
+
+.flex-d-col {
+	flex-direction: column;
+}
+
+.flex-jc-start {
+	justify-content: flex-start;
+}
+
+.flex-jc-center {
+	justify-content: center;
+}
+
+.flex-jc-end {
+	justify-content: flex-end;
+}
+
+.flex-jc-sb {
+	justify-content: space-between;
+}
+
+.flex-jc-sa {
+	justify-content: space-around;
+}
+
+.flex-ai-start {
+	align-items: flex-start;
+}
+
+.flex-ai-center {
+	align-items: center;
+}
+
+.flex-ai-end {
+	align-items: flex-end;
+}
+
+.ta-start {
+	text-align: start;
+}
+
+.ta-center {
+	text-align: center;
+}
+
+.ta-end {
+	text-align: end;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.field {
+	font-family: 'Lato', sans-serif;
+	font-size: 2rem;
+	padding: 0.8rem 1.5rem;
+	resize: none;
+	border: 2px solid grey;
+}
+
+.btn-contained {
+	font-family: 'Lato', sans-serif;
+	border: 2px solid var(--color_brand1);
+	background-color: var(--color_brand1);
+	color: white;
+	display: inline-block;
+	font-weight: normal;
+	padding: 0.8rem 1.5rem;
+	font-size: 2rem;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.btn-contained:hover {
+	background-color: var(--color_brand3);
+}
+
+.btn-highlight {
+	font-family: 'Lato', sans-serif;
+	border: 2px solid var(--color_brand1);
+	background-color: transparent;
+	color: var(--color_brand1);
+	display: inline-block;
+	font-weight: normal;
+	padding: 0.8rem 1.5rem;
+	font-size: 2rem;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.btn-highlight:hover {
+	background-color: var(--color_brand1);
+	color: white;
+}
+
+@media (--small) {
+	.container {
+		width: 90%;
+	}
+
+	.section-title {
+		font-size: 2.5rem;
+		margin-bottom: 4rem;
+	}
+}
+
+@media (--medium) {
+	.container {
+		width: 80%;
+	}
+
+	.section-title {
+		font-size: 4rem;
+		margin-bottom: 4rem;
+	}
+}

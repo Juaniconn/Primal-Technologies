@@ -17,11 +17,6 @@
 			font-size: 1.4rem;
 			margin-bottom: 2rem;
 		}
-
-		& a {
-			display: inline-flex;
-			@apply --btn;
-		}
 	}
 	& img {
 		width: 25%;

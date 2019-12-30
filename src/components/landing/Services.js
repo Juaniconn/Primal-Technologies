@@ -10,15 +10,15 @@ const Services = () => {
 
   return (
     <section id="Services">
-      <div className="container col services_container">
+      <div className="container flex flex-d-col flex-ai-center">
         <div>
-          <p className="section_title brand_color">Services</p>
+          <h2 className="section-title brand">Services</h2>
         </div>
-        <div className="servicesMenu white">
+        <div className="services_menu flex-ai-center white">
           {options.map(option => {
             return (
-              <div key={option.title} className="serviceItem">
-                <i className={`${option.icon} serviceIcon`}></i>
+              <div key={option.title} className="flex flex-d-col flex-ai-center service_item">
+                <i className={`${option.icon} service_icon`}></i>
                 <p className="service_title">{option.title}</p>
               </div>
             );

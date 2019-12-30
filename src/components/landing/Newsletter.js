@@ -3,16 +3,14 @@ import React from 'react'
 function Newsletter() {
   return (
     <section>
-      <div className="container col newsletter_container">
-        <div className="">
-          <h2 className="section_title white">Stay informed</h2>
-        </div>
-        <div className="newsletter_form_container">
-          <form className="newsletter_form">
-            <input className="newsletter_emailInput" type="email" placeholder="Enter your email" />
-            <input className="newsletter_btn" type="submit" value="Subscribe" />
+      <div className="container flex flex-d-col flex-ai-center">
+        <h2 className="section-title white">Stay informed</h2>
+        <div className="flex flex-d-col flex-ai-center w-100">
+          <form className="w-100 nl_form">
+            <input className="field nl_input" type="email" placeholder="Enter your email" />
+            <input className="btn-contained nl_btn" type="submit" value="Subscribe" />
           </form>
-          <p className="simple_advice">*Trust us, we'll never send you spam</p>
+          <p className="simple_advice white">*Trust us, we'll never send you spam</p>
         </div>
       </div>
     </section>

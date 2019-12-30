@@ -14,10 +14,11 @@
 	content: attr(data-glitch);
 	text-transform: uppercase;
 	position: absolute;
-	border: 1px solid black;
-	top: 2.2rem;
-	display: flex;
 	opacity: 0.8;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
 	color: #f0f;
 	z-index: -2;
 }
@@ -30,7 +31,7 @@
 	animation: glitch 0.3s cubic-bezier(0.15, 0.36, 0.35, 0.84) reverse both 5;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 300px) {
 	.glitch {
 		font-size: 3em;
 	}
@@ -141,36 +142,36 @@
 	}
 }
 
-.show_Navbar{
-    animation-name: show_Navbar;
+.show_Navbar {
+	animation-name: show_Navbar;
 	animation-fill-mode: forwards;
 	animation-duration: 450ms;
 	animation-timing-function: ease-out;
 }
 
-@keyframes show_Navbar{
-    from{
-        height: 0;
-    }
+@keyframes show_Navbar {
+	from {
+		height: 0;
+	}
 
-    to{
-        height: 26rem;
-    }
+	to {
+		height: 26rem;
+	}
 }
 
-.hide_Navbar{
-    animation-name: hide_Navbar;
+.hide_Navbar {
+	animation-name: hide_Navbar;
 	animation-fill-mode: forwards;
 	animation-duration: 450ms;
 	animation-timing-function: ease-out;
 }
 
-@keyframes hide_Navbar{
-    from{
-        height: 26rem;
-    }
+@keyframes hide_Navbar {
+	from {
+		height: 26rem;
+	}
 
-    to{
-        height: 0;
-    }
+	to {
+		height: 0;
+	}
 }

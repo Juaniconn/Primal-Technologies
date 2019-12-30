@@ -1,60 +1,74 @@
-/* Conctact */
-
-#Contact {
-	background-color: white;
-}
-
-.contact_container {
-	align-items: flex-start;
-}
+/* Contact */
 
 .container_item {
 	width: 100%;
 	padding: 2rem;
 }
 
-.contact_title {
-	text-align: left;
-}
-
-.rectangle {
-	width: 15rem;
-	height: 1rem;
-	margin-bottom: 1rem;
-	background-color: var(--color_brand1);
-}
-
-.contact_subtitle {
-	text-align: left;
-}
-
-.contact_form {
-	display: flex;
-	flex-direction: column;
+.reset_margin_bot {
+	margin-bottom: 0rem !important;
 }
 
 .form_item {
 	margin: 1rem 0rem;
-	border: 1px solid black;
 }
 
-.field {
-	font-family: 'Lato', sans-serif;
-	font-size: 2rem;
-	padding: 1rem;
-	margin: 1rem 0rem;
-	width: 100%;
-	resize: none;
+.icons_container {
+	margin-top: 4rem;
+	flex-wrap: wrap;
 }
 
-.form_btn {
-	border: none;
+.flex-d-responsive {
+	flex-direction: column;
+}
+
+.rectangle {
+	width: 10rem;
+	height: 0.5rem;
 	background-color: var(--color_brand1);
-	color: white;
-	display: inline-block;
-	letter-spacing: 0.2rem;
-	font-weight: normal;
-	padding: 0.8rem 1.5rem;
-	font-size: 2rem;
-	width: 100%;
+	margin: 2rem 0rem 3rem 0rem;
+}
+
+.contact_content {
+	font-size: 1.8rem;
+}
+
+.icon_item {
+	width: 150px;
+	margin: 1.5rem;
+}
+
+.icon {
+	font-size: 3rem;
+	margin-right: 1rem;
+}
+
+.icon_text {
+	font-size: 1.2rem;
+}
+
+@media (--large) {
+	.flex-d-responsive {
+		flex-direction: row;
+	}
+
+	.rectangle {
+		width: 15rem;
+		height: 0.5rem;
+		background-color: var(--color_brand1);
+		margin: 2rem 0rem 3rem 0rem;
+	}
+
+	.contact_content {
+		font-size: 2rem;
+	}
+
+	.icon {
+		font-size: 3rem;
+		margin-right: 1rem;
+	}
+
+	.icon_text {
+		font-size: 1.4rem;
+	}
 }

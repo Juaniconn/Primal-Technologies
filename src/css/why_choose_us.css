@@ -1,51 +1,42 @@
 /* Why choose us? */
 
-.text_center {
-	align-items: center;
-}
-
-.values_title_container {
-	margin-bottom: 4rem;
-}
-
-.values_itemsWrapper {
-	display: grid;
-	grid-template: 'a b' 'c d' ' f g';
-	gap: 4rem;
-}
-
-.value_icon {
-	font-size: 5rem;
-}
-
-.value_title {
-	font-size: 1.6rem;
-	margin: 1rem 0rem;
-}
-
-.value_body {
-	font-size: 1.2rem;
-	text-align: start;
-}
-
-@media (--medium) {
-	.values_itemsWrapper {
-		height: 70%;
+@media (--small) {
+	.values_container {
 		display: grid;
-		grid-template: 'a b c' 'd f g';
-		gap: 4rem;
+		grid-template: 'a b' 'c d' ' f g';
+		gap: 6rem;
 	}
 
 	.value_icon {
-		font-size: 8rem;
+		font-size: 5rem;
 	}
 
 	.value_title {
-		font-size: 2.2rem;
-		margin: 1rem 0rem;
+		font-size: 2rem;
+		margin-top: 1.5rem;
 	}
 
 	.value_body {
-		font-size: 1.6rem;
+		display: none;
+	}
+}
+@media (--medium) {
+	.values_container {
+		display: grid;
+		grid-template: 'a b c' 'd f g';
+		gap: 6rem;
+	}
+
+	.value_icon {
+		font-size: 6rem;
+	}
+
+	.value_title {
+		font-size: 2.4rem;
+		margin-top: 1.5rem;
+	}
+
+	.value_body {
+		display: none;
 	}
 }
