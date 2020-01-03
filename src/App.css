@@ -488,40 +488,6 @@ p {
 	}
 }
 
-.show_Navbar {
-	animation-name: show_Navbar;
-	animation-fill-mode: forwards;
-	animation-duration: 450ms;
-	animation-timing-function: ease-out;
-}
-
-@keyframes show_Navbar {
-	from {
-		height: 0;
-	}
-
-	to {
-		height: 26rem;
-	}
-}
-
-.hide_Navbar {
-	animation-name: hide_Navbar;
-	animation-fill-mode: forwards;
-	animation-duration: 450ms;
-	animation-timing-function: ease-out;
-}
-
-@keyframes hide_Navbar {
-	from {
-		height: 26rem;
-	}
-
-	to {
-		height: 0;
-	}
-}
-
 /* Header */
 
 .header {
@@ -1057,6 +1023,39 @@ p {
 	.section-title {
 		font-size: 2.5rem;
 		margin-bottom: 4rem;
+	}
+	.show_Navbar {
+		animation-name: show_Navbar;
+		animation-fill-mode: forwards;
+		animation-duration: 450ms;
+		animation-timing-function: ease-out;
+	}
+	
+	@keyframes show_Navbar {
+		from {
+			height: 0;
+		}
+	
+		to {
+			height: 26rem;
+		}
+	}
+	
+	.hide_Navbar {
+		animation-name: hide_Navbar;
+		animation-fill-mode: forwards;
+		animation-duration: 450ms;
+		animation-timing-function: ease-out;
+	}
+	
+	@keyframes hide_Navbar {
+		from {
+			height: 26rem;
+		}
+	
+		to {
+			height: 0;
+		}
 	}
 	nav {
 		position: fixed;

@@ -1,5 +1,5 @@
 import React from 'react'
-import Project1 from './../../img/portfolio_photo1.jpg';
+import Project1 from './../../img/portfolio_photo2.jpg';
 
 function Project() {
     const previous = () => {

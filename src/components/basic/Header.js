@@ -32,7 +32,7 @@ class Header extends Component {
                             {menuItems.map(item => {
                                 return (
                                     <li key={item} className="navItem">
-                                        <a className="glitch link" href={`#${item}`} data-glitch={item}>{item}</a>
+                                        <a onClick={this.showNavbar} className="glitch link" href={`#${item}`} data-glitch={item}>{item}</a>
                                     </li>
                                 );
                             })}
