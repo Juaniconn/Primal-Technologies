@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Primal-Technologies/static/css/main.c7f6115d.chunk.css",
+    "main.css": "/Primal-Technologies/static/css/main.b6515b77.chunk.css",
     "main.js": "/Primal-Technologies/static/js/main.2d8bc7e8.chunk.js",
     "main.js.map": "/Primal-Technologies/static/js/main.2d8bc7e8.chunk.js.map",
     "runtime-main.js": "/Primal-Technologies/static/js/runtime-main.e04f70e7.js",
@@ -8,9 +8,9 @@
     "static/js/2.dada036f.chunk.js": "/Primal-Technologies/static/js/2.dada036f.chunk.js",
     "static/js/2.dada036f.chunk.js.map": "/Primal-Technologies/static/js/2.dada036f.chunk.js.map",
     "index.html": "/Primal-Technologies/index.html",
-    "precache-manifest.181448c6bf6e528b77d5820966f6093b.js": "/Primal-Technologies/precache-manifest.181448c6bf6e528b77d5820966f6093b.js",
+    "precache-manifest.6456db77b06ebfac158bed13ae79e264.js": "/Primal-Technologies/precache-manifest.6456db77b06ebfac158bed13ae79e264.js",
     "service-worker.js": "/Primal-Technologies/service-worker.js",
-    "static/css/main.c7f6115d.chunk.css.map": "/Primal-Technologies/static/css/main.c7f6115d.chunk.css.map",
+    "static/css/main.b6515b77.chunk.css.map": "/Primal-Technologies/static/css/main.b6515b77.chunk.css.map",
     "static/js/2.dada036f.chunk.js.LICENSE": "/Primal-Technologies/static/js/2.dada036f.chunk.js.LICENSE",
     "static/media/App.css": "/Primal-Technologies/static/media/icomoon.e33116df.ttf",
     "static/media/portfolio_photo2.jpg": "/Primal-Technologies/static/media/portfolio_photo2.ae5ab048.jpg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.e04f70e7.js",
     "static/js/2.dada036f.chunk.js",
-    "static/css/main.c7f6115d.chunk.css",
+    "static/css/main.b6515b77.chunk.css",
     "static/js/main.2d8bc7e8.chunk.js"
   ]
 }
