@@ -3,7 +3,7 @@ import React from 'react'
 function Newsletter() {
   return (
     <section>
-      <div className="container flex flex-d-col flex-ai-center">
+      <div className="container flex flex-d-col flex-ai-center zoom-in">
         <h2 className="section-title white">Stay informed</h2>
         <div className="flex flex-d-col flex-ai-center w-100">
           <form className="w-100 nl_form">

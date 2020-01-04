@@ -30,12 +30,6 @@
 	font-size: 1.6rem;
 }
 
-/*.link {
-	width: 100%;
-	position: relative;
-	font-size: 1.6rem;
-}*/
-
 @media (--small) {
 	nav {
 		position: fixed;

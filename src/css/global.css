@@ -146,6 +146,14 @@ section {
 }
 
 @media (--small) {
+	section {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding: 5rem 0rem;
+	}
+
 	.container {
 		width: 90%;
 	}
@@ -157,6 +165,14 @@ section {
 }
 
 @media (--medium) {
+	section {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding: 10rem 0rem;
+	}
+
 	.container {
 		width: 80%;
 	}

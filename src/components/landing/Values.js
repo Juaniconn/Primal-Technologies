@@ -15,11 +15,11 @@ function Values() {
     return (
         <section>
             <div className="container flex flex-d-col ta-center">
-                <h2 className="section-title brand">Why choose us?</h2>
+                <h2 className="section-title brand fade-in-up">Why choose us?</h2>
                 <div className="values_container white">
                     {values.map((value, i) => {
                         return (
-                            <div key={i}>
+                            <div key={i} className="rotate-in">
                                 <i className={`${value.icon} value_icon`}></i>
                                 <h3 className="value_title">{value.title}</h3>
                                 <p className="value_body">{value.body}</p>

@@ -1,0 +1,325 @@
+$brand-color: #00b6e2;
+$secondary-color: #f0f;
+
+/*Animations*/
+
+/*Global animations*/
+.zoom-in {
+	font-family: Lato, sans-serif;
+	animation: anim-zoomIn 1s ease-in-out;
+
+	@keyframes anim-zoomIn {
+		0% {
+			transform: scale(0.1);
+		}
+
+		100% {
+			transform: scale(1);
+		}
+	}
+}
+
+.fade-in-up {
+	animation: anim-fadeInUp 1s 1;
+
+	@keyframes anim-fadeInUp {
+		0% {
+			transform: translateY(10rem);
+			opacity: 0;
+		}
+
+		100% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+}
+
+/*Navbar animations*/
+.show-navbar {
+	animation-name: anim-show-navbar;
+	animation-fill-mode: forwards;
+	animation-duration: 450ms;
+	animation-timing-function: ease-out;
+
+	@keyframes anim-show-navbar {
+		from {
+			height: 0;
+		}
+
+		to {
+			height: 26rem;
+		}
+	}
+}
+
+.hide-navbar {
+	animation-name: anim-hide-navbar;
+	animation-fill-mode: forwards;
+	animation-duration: 450ms;
+	animation-timing-function: ease-out;
+
+	@keyframes anim-hide-navbar {
+		from {
+			height: 26rem;
+		}
+
+		to {
+			height: 0;
+		}
+	}
+}
+
+.glitch-excited {
+	&::before,
+	&::after {
+		content: attr(data-glitch);
+		text-transform: uppercase;
+		position: absolute;
+		opacity: 0.9;
+	}
+
+	&::before {
+		position: absolute;
+		color: $brand-color;
+		z-index: -1;
+	}
+
+	&::after {
+		top: 0;
+		bottom: 0;
+		display: flex;
+		align-items: center;
+		color: $secondary-color;
+		z-index: -2;
+	}
+
+	&:hover::before {
+		animation: anim-glitch-excited 0.3s cubic-bezier(0.15, 0.36, 0.35, 0.84) both 5;
+	}
+
+	&:hover::after {
+		animation: anim-glitch-excited 0.3s cubic-bezier(0.15, 0.36, 0.35, 0.84) reverse both 5;
+	}
+
+	@keyframes anim-glitch-excited {
+		0% {
+			transform: translate(0);
+		}
+		20% {
+			transform: translate(-5px, 5px);
+		}
+		40% {
+			transform: translate(-5px, -5px);
+		}
+		60% {
+			transform: translate(5px, 5px);
+		}
+		80% {
+			transform: translate(5px, -5px);
+		}
+		to {
+			transform: translate(0);
+		}
+	}
+}
+
+/*Hero animations*/
+.float {
+	animation: anim-float 2s infinite;
+
+	@keyframes anim-float {
+		0% {
+			transform: translateY(0) translateX(0) rotate(-45deg);
+		}
+
+		60% {
+			transform: translateY(0.7rem) translateX(0.7rem) rotate(-45deg);
+		}
+
+		100% {
+			transform: translateY(0) translateX(0) rotate(-45deg);
+		}
+	}
+}
+
+/*About animations*/
+.fade-in-left {
+	animation: anim-fadeInLeft 1s ease;
+	animation-fill-mode: forwards;
+	opacity: 0;
+
+	@for $i from 1 through 3 {
+		&:nth-child(#{$i}) {
+			animation-delay: ($i * 0.2s) + 0.5s;
+		}
+	}
+
+	@keyframes anim-fadeInLeft {
+		0% {
+			transform: translateX(10rem);
+		}
+
+		100% {
+			transform: translateX(0rem);
+			opacity: 1;
+		}
+	}
+}
+
+/*Services animations*/
+.zoom-in-bounce {
+	animation: anim-zoom-in-bounce 1s ease-in;
+	animation-fill-mode: forwards;
+	transform: scale(0);
+	opacity: 0;
+
+	@for $i from 1 through 4 {
+		&:nth-child(#{$i}) {
+			animation-delay: ($i * 0.2s) + 0.5s;
+		}
+	}
+
+	@keyframes anim-zoom-in-bounce {
+		0% {
+			transform: scale(0.3);
+		}
+
+		50% {
+			transform: scale(1.2);
+			opacity: 0.9;
+		}
+
+		80% {
+			transform: scale(0.9);
+			opacity: 1;
+		}
+
+		100% {
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+}
+
+/*Projects animations*/
+.glitch-img {
+	position: absolute;
+	background-position: center;
+	background-size: cover;
+
+	&:nth-child(1) {
+		transform: translateX(3px);
+		background-color: $brand-color;
+		background-blend-mode: luminosity;
+	}
+
+	&:nth-child(2) {
+		transform: translateX(3px);
+		background-color: $secondary-color;
+		background-blend-mode: luminosity;
+	}
+}
+
+.glitch-text {
+	position: absolute;
+	background-color: black;
+
+	&:nth-child(1) {
+		transform: translateX(3px);
+		text-shadow: -2px 0 $brand-color;
+	}
+
+	&:nth-child(2) {
+		transform: translateX(-3px);
+		text-shadow: -2px 0 $secondary-color;
+	}
+}
+
+/*Values animations*/
+.rotate-in {
+	animation: anim-rotate-in 0.5s ease-in;
+	animation-fill-mode: forwards;
+	transform: rotateY(180deg);
+	opacity: 0;
+
+	@for $i from 1 through 6 {
+		&:nth-child(#{$i}) {
+			animation-delay: ($i * 0.2s) + 0.5s;
+		}
+	}
+
+	@keyframes anim-rotate-in {
+		0% {
+			transform: rotateY(180deg);
+		}
+
+		100% {
+			transform: rotateY(0deg);
+			opacity: 1;
+		}
+	}
+}
+
+/*Contact animations*/
+.fade-in-down {
+	animation: anim-fade-in-down 1s ease;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	transform: translateY(10rem);
+
+	@for $i from 1 through 4 {
+		&:nth-child(#{$i}) {
+			animation-delay: ($i * 0.1s) + 0.5s;
+		}
+	}
+
+	@keyframes anim-fade-in-down {
+		0% {
+			transform: translateY(10rem);
+			opacity: 0;
+		}
+
+		100% {
+			transform: translateY(0rem);
+			opacity: 1;
+		}
+	}
+}
+
+/*Maps animations*/
+.fade-in {
+	animation-name: anim-fade-in;
+	animation-fill-mode: forwards;
+	animation-duration: 450ms;
+	animation-timing-function: ease-out;
+
+	@keyframes anim-fade-in {
+		from {
+			opacity: 0;
+			z-index: 1;
+		}
+
+		to {
+			opacity: 1;
+		}
+	}
+}
+
+.fade-out {
+	animation-name: anim-fade-out;
+	animation-fill-mode: forwards;
+	animation-duration: 450ms;
+	animation-timing-function: ease-out;
+
+	@keyframes anim-fade-out {
+		from {
+			opacity: 1;
+		}
+
+		to {
+			opacity: 0;
+			z-index: 0;
+		}
+	}
+}

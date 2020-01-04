@@ -12,12 +12,12 @@ const Services = () => {
     <section id="Services">
       <div className="container flex flex-d-col flex-ai-center">
         <div>
-          <h2 className="section-title brand">Services</h2>
+          <h2 className="section-title brand fade-in-up">Services</h2>
         </div>
         <div className="services_menu flex-ai-center white">
           {options.map(option => {
             return (
-              <div key={option.title} className="flex flex-d-col flex-ai-center service_item">
+              <div key={option.title} className="flex flex-d-col flex-ai-center service_item zoom-in-bounce">
                 <i className={`${option.icon} service_icon`}></i>
                 <p className="service_title">{option.title}</p>
               </div>
