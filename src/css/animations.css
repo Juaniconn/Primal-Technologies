@@ -1,179 +1,23 @@
 /* Animations */
 
-.glitch::before {
-	display: block;
-	content: attr(data-glitch);
-	text-transform: uppercase;
-	position: absolute;
-	opacity: 0.8;
-	color: #0ff;
-	z-index: -1;
+
+/* Headroom */
+
+.headroom-wrapper{
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
 }
 
-.glitch::after {
-	content: attr(data-glitch);
-	text-transform: uppercase;
-	position: absolute;
-	opacity: 0.8;
+.headroom {
 	top: 0;
-	bottom: 0;
-	display: flex;
-	align-items: center;
-	color: #f0f;
-	z-index: -2;
-}
-
-.glitch:hover::before {
-	animation: glitch 0.3s cubic-bezier(0.15, 0.36, 0.35, 0.84) both 5;
-}
-
-.glitch:hover::after {
-	animation: glitch 0.3s cubic-bezier(0.15, 0.36, 0.35, 0.84) reverse both 5;
-}
-
-@media only screen and (max-width: 300px) {
-	.glitch {
-		font-size: 3em;
-	}
-}
-
-@keyframes glitch {
-	0% {
-		transform: translate(0);
-	}
-	20% {
-		transform: translate(-5px, 5px);
-	}
-	40% {
-		transform: translate(-5px, -5px);
-	}
-	60% {
-		transform: translate(5px, 5px);
-	}
-	80% {
-		transform: translate(5px, -5px);
-	}
-	to {
-		transform: translate(0);
-	}
-}
-
-.fade_out {
-	animation-name: fade_out;
-	animation-fill-mode: forwards;
-	animation-duration: 1s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-out;
-	animation-play-state: running;
-}
-
-@keyframes fade_out {
-	from {
-		transform: translateY(0) translateX(0) rotate(-45deg);
-	}
-	to {
-		transform: translateY(0.7rem) translateX(0.7rem) rotate(-45deg);
-	}
-}
-
-.slideshow_gallery {
-	animation: slideshow_gallery 20s linear infinite;
-}
-
-@keyframes slideshow_gallery {
-	from {
-		transform: translateY(0rem);
-	}
-
-	20% {
-		transform: translateY(20rem);
-	}
-
-	40% {
-		transform: translateY(40rem);
-	}
-
-	60% {
-		transform: translateY(60rem);
-	}
-
-	80% {
-		transform: translateY(80rem);
-	}
-
-	to {
-		transform: translateY(80rem);
-	}
-}
-
-.fade_outMap {
-	animation-name: fade_outMap;
-	animation-fill-mode: forwards;
-	animation-duration: 450ms;
-	animation-timing-function: ease-out;
-}
-
-@keyframes fade_outMap {
-	from {
-		opacity: 1;
-	}
-
-	to {
-		opacity: 0;
-		z-index: 0;
-	}
-}
-
-.fade_inMap {
-	animation-name: fade_inMap;
-	animation-fill-mode: forwards;
-	animation-duration: 450ms;
-	animation-timing-function: ease-out;
-}
-
-@keyframes fade_inMap {
-	from {
-		opacity: 0;
-		z-index: 1;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
-
-@media (--small){
-	.show_Navbar {
-		animation-name: show_Navbar;
-		animation-fill-mode: forwards;
-		animation-duration: 450ms;
-		animation-timing-function: ease-out;
-	}
-	
-	@keyframes show_Navbar {
-		from {
-			height: 0;
-		}
-	
-		to {
-			height: 26rem;
-		}
-	}
-	
-	.hide_Navbar {
-		animation-name: hide_Navbar;
-		animation-fill-mode: forwards;
-		animation-duration: 450ms;
-		animation-timing-function: ease-out;
-	}
-	
-	@keyframes hide_Navbar {
-		from {
-			height: 26rem;
-		}
-	
-		to {
-			height: 0;
-		}
-	}
-}
+	left: 0;
+	right: 0;
+	transition: transform 200ms ease-in-out;
+  }
+  .headroom--unpinned {
+	transform: translateY(-100%);
+  }
+  .headroom--pinned {
+	transform: translateY(0%);
+  }

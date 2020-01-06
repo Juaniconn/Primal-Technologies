@@ -27,7 +27,7 @@ class Header extends Component {
                     <a href="#Home">
                         <img className="logo" src={PrimalLogo} alt="Primal Logo" />
                     </a>
-                    <nav ref={this.hideref}>
+                    <nav className="main_nav" ref={this.hideref}>
                         <ul className="flex flex-jc-center flex-ai-center nav">
                             {menuItems.map(item => {
                                 return (

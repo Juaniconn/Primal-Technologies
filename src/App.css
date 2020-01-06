@@ -444,14 +444,42 @@ p {
 
 @keyframes anim-fade-out{from{opacity:1}to{opacity:0;z-index:0}}
 
+/* Animations */
+
+/* Headroom */
+
+.headroom-wrapper{
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+}
+
+.headroom {
+	top: 0;
+	left: 0;
+	right: 0;
+	transition: transform 200ms ease-in-out;
+  }
+
+.headroom--unpinned {
+	transform: translateY(-100%);
+  }
+
+.headroom--pinned {
+	transform: translateY(0%);
+  }
+
 /* Header */
+
+.main_nav{
+	position: fixed;
+	right: 10%;
+	top: 0;
+}
 
 .header {
 	background-color: black;
-	position: fixed;
-	width: 100vw;
 	height: 7rem;
-	z-index: 9999;
 }
 
 .logo {
@@ -462,6 +490,9 @@ p {
 	list-style: none;
 	font-size: 1.6rem;
 	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	line-height: 7rem;
 }
 
 .navItem {
@@ -996,8 +1027,9 @@ p {
 		height: 0rem;
 		overflow: hidden;
 	}
-
+	
 	.nav {
+		line-height: initial;
 		padding: 2rem 10%;
 		flex-direction: column;
 		margin: 0;

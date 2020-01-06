@@ -1,11 +1,14 @@
 /* Header */
 
+.main_nav{
+	position: fixed;
+	right: 10%;
+	top: 0;
+}
+
 .header {
 	background-color: black;
-	position: fixed;
-	width: 100vw;
 	height: 7rem;
-	z-index: 9999;
 }
 
 .logo {
@@ -16,6 +19,9 @@
 	list-style: none;
 	font-size: 1.6rem;
 	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	line-height: 7rem;
 }
 
 .navItem {
@@ -44,8 +50,9 @@
 		height: 0rem;
 		overflow: hidden;
 	}
-
+	
 	.nav {
+		line-height: initial;
 		padding: 2rem 10%;
 		flex-direction: column;
 		margin: 0;
