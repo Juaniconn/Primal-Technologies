@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/Primal-Technologies/static/css/main.b6515b77.chunk.css",
-    "main.js": "/Primal-Technologies/static/js/main.2d8bc7e8.chunk.js",
-    "main.js.map": "/Primal-Technologies/static/js/main.2d8bc7e8.chunk.js.map",
+    "main.css": "/Primal-Technologies/static/css/main.1e686ed5.chunk.css",
+    "main.js": "/Primal-Technologies/static/js/main.130b226f.chunk.js",
+    "main.js.map": "/Primal-Technologies/static/js/main.130b226f.chunk.js.map",
     "runtime-main.js": "/Primal-Technologies/static/js/runtime-main.e04f70e7.js",
     "runtime-main.js.map": "/Primal-Technologies/static/js/runtime-main.e04f70e7.js.map",
-    "static/js/2.dada036f.chunk.js": "/Primal-Technologies/static/js/2.dada036f.chunk.js",
-    "static/js/2.dada036f.chunk.js.map": "/Primal-Technologies/static/js/2.dada036f.chunk.js.map",
+    "static/js/2.42d22997.chunk.js": "/Primal-Technologies/static/js/2.42d22997.chunk.js",
+    "static/js/2.42d22997.chunk.js.map": "/Primal-Technologies/static/js/2.42d22997.chunk.js.map",
     "index.html": "/Primal-Technologies/index.html",
-    "precache-manifest.6456db77b06ebfac158bed13ae79e264.js": "/Primal-Technologies/precache-manifest.6456db77b06ebfac158bed13ae79e264.js",
+    "precache-manifest.d9493a1f1b929f6d74f5a8cc5414c9bb.js": "/Primal-Technologies/precache-manifest.d9493a1f1b929f6d74f5a8cc5414c9bb.js",
     "service-worker.js": "/Primal-Technologies/service-worker.js",
-    "static/css/main.b6515b77.chunk.css.map": "/Primal-Technologies/static/css/main.b6515b77.chunk.css.map",
-    "static/js/2.dada036f.chunk.js.LICENSE": "/Primal-Technologies/static/js/2.dada036f.chunk.js.LICENSE",
+    "static/css/main.1e686ed5.chunk.css.map": "/Primal-Technologies/static/css/main.1e686ed5.chunk.css.map",
+    "static/js/2.42d22997.chunk.js.LICENSE": "/Primal-Technologies/static/js/2.42d22997.chunk.js.LICENSE",
     "static/media/App.css": "/Primal-Technologies/static/media/icomoon.e33116df.ttf",
-    "static/media/portfolio_photo2.jpg": "/Primal-Technologies/static/media/portfolio_photo2.ae5ab048.jpg",
+    "static/media/portfolio_post1.jpg": "/Primal-Technologies/static/media/portfolio_post1.39813596.jpg",
+    "static/media/portfolio_post2.jpg": "/Primal-Technologies/static/media/portfolio_post2.9712714c.jpg",
+    "static/media/portfolio_post3.jpg": "/Primal-Technologies/static/media/portfolio_post3.3d458e5e.jpg",
     "static/media/primal_logo.gif": "/Primal-Technologies/static/media/primal_logo.e1fa946f.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.e04f70e7.js",
-    "static/js/2.dada036f.chunk.js",
-    "static/css/main.b6515b77.chunk.css",
-    "static/js/main.2d8bc7e8.chunk.js"
+    "static/js/2.42d22997.chunk.js",
+    "static/css/main.1e686ed5.chunk.css",
+    "static/js/main.130b226f.chunk.js"
   ]
 }
