@@ -36,36 +36,38 @@ $secondary-color: #f0f;
 }
 
 /*Navbar animations*/
-.show-navbar {
-	animation-name: anim-show-navbar;
-	animation-fill-mode: forwards;
-	animation-duration: 450ms;
-	animation-timing-function: ease-out;
+@media (--small) {
+	.show-navbar {
+		animation-name: anim-show-navbar;
+		animation-fill-mode: forwards;
+		animation-duration: 450ms;
+		animation-timing-function: ease-out;
 
-	@keyframes anim-show-navbar {
-		from {
-			height: 0;
-		}
+		@keyframes anim-show-navbar {
+			from {
+				height: 0;
+			}
 
-		to {
-			height: 26rem;
+			to {
+				height: 26rem;
+			}
 		}
 	}
-}
 
-.hide-navbar {
-	animation-name: anim-hide-navbar;
-	animation-fill-mode: forwards;
-	animation-duration: 450ms;
-	animation-timing-function: ease-out;
+	.hide-navbar {
+		animation-name: anim-hide-navbar;
+		animation-fill-mode: forwards;
+		animation-duration: 450ms;
+		animation-timing-function: ease-out;
 
-	@keyframes anim-hide-navbar {
-		from {
-			height: 26rem;
-		}
+		@keyframes anim-hide-navbar {
+			from {
+				height: 26rem;
+			}
 
-		to {
-			height: 0;
+			to {
+				height: 0;
+			}
 		}
 	}
 }

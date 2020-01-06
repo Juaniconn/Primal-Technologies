@@ -358,14 +358,6 @@ p {
 
 @keyframes anim-fadeInUp{0%{transform:translateY(10rem);opacity:0}100%{transform:translateY(0);opacity:1}}
 
-.show-navbar{animation-name:anim-show-navbar;animation-fill-mode:forwards;animation-duration:450ms;animation-timing-function:ease-out}
-
-@keyframes anim-show-navbar{from{height:0}to{height:26rem}}
-
-.hide-navbar{animation-name:anim-hide-navbar;animation-fill-mode:forwards;animation-duration:450ms;animation-timing-function:ease-out}
-
-@keyframes anim-hide-navbar{from{height:26rem}to{height:0}}
-
 .glitch-excited::before,.glitch-excited::after{content:attr(data-glitch);text-transform:uppercase;position:absolute;opacity:0.9}
 
 .glitch-excited::before{position:absolute;color:#00b6e2;z-index:-1}
@@ -700,6 +692,11 @@ p {
 
 /* Newsletter */
 
+.nl_description {
+	font-size: 1.6rem;
+	margin-bottom: 2rem;
+}
+
 .nl_input {
 	width: 60%;
 }
@@ -985,7 +982,7 @@ p {
 	.section-title {
 		font-size: 2.5rem;
 		margin-bottom: 4rem;
-	}
+	}.show-navbar{animation-name:anim-show-navbar;animation-fill-mode:forwards;animation-duration:450ms;animation-timing-function:ease-out}@keyframes anim-show-navbar{from{height:0}to{height:26rem}}.hide-navbar{animation-name:anim-hide-navbar;animation-fill-mode:forwards;animation-duration:450ms;animation-timing-function:ease-out}@keyframes anim-hide-navbar{from{height:26rem}to{height:0}}
 	nav {
 		position: fixed;
 		z-index: 0;
@@ -1175,6 +1172,11 @@ p {
 	.value_body {
 		display: none;
 	}
+	.nl_description {
+		font-size: 2rem;
+		width: 80%;
+	}
+
 	.nl_form {
 		width: 80%;
 	}
