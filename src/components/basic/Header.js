@@ -10,12 +10,12 @@ class Header extends Component {
     }
 
     showNavbar() {
-        if (!this.hideref.current.classList.contains('show_Navbar')) {
-            this.hideref.current.classList.add('show_Navbar')
-            this.hideref.current.classList.remove('hide_Navbar')
+        if (!this.hideref.current.classList.contains('show-navbar')) {
+            this.hideref.current.classList.add('show-navbar')
+            this.hideref.current.classList.remove('hide-navbar')
         } else {
-            this.hideref.current.classList.remove('show_Navbar')
-            this.hideref.current.classList.add('hide_Navbar')
+            this.hideref.current.classList.remove('show-navbar')
+            this.hideref.current.classList.add('hide-navbar')
         }
     }
 
@@ -31,8 +31,8 @@ class Header extends Component {
                         <ul className="flex flex-jc-center flex-ai-center nav">
                             {menuItems.map(item => {
                                 return (
-                                    <li key={item} className="navItem">
-                                        <a onClick={this.showNavbar} className="glitch link" href={`#${item}`} data-glitch={item}>{item}</a>
+                                    <li key={item} className="navItem" onClick={this.showNavbar}>
+                                        <a className="glitch-excited link" href={`#${item}`} data-glitch={item}>{item}</a>
                                     </li>
                                 );
                             })}

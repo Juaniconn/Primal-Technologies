@@ -3,8 +3,12 @@ import React from 'react'
 function Newsletter() {
   return (
     <section>
-      <div className="container flex flex-d-col flex-ai-center">
-        <h2 className="section-title white">Stay informed</h2>
+      <div className="container flex flex-d-col flex-ai-center zoom-in">
+        <h2 className="section-title white">Looking for exclusive content?</h2>
+        <p className="nl_description ta-center white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
         <div className="flex flex-d-col flex-ai-center w-100">
           <form className="w-100 nl_form">
             <input className="field nl_input" type="email" placeholder="Enter your email" />

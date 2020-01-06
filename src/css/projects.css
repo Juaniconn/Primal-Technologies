@@ -4,89 +4,98 @@
 	background-color: black;
 }
 
-.projects_wrapper {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	padding: 2rem;
-}
-
-.project_icons {
-	color: white;
-	font-size: 4rem;
-}
-
-.projects_container {
-	width: 90%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
 .project_item {
 	width: 100%;
-	text-align: left;
-	overflow: hidden;
-}
-
-.project_img_border {
-	border: 1px solid white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	z-index: 10;
 }
 
 .project_img {
 	width: 80%;
+	height: 250px;
+	background-position: center;
+	background-size: cover;
+}
+
+/*Project info*/
+.project_info {
+	width: 100%;
+	margin: 2rem 0rem;
+	align-items: center;
 }
 
 .project_title {
-	font-size: 2.5rem;
+	font-size: 2rem;
+	text-align: center;
 }
 
 .project_rectangle {
-	width: 15rem;
+	width: 10rem;
 	height: 0.5rem;
 	background-color: white;
-	margin: 1rem 0rem;
+	margin: 1rem 0rem 2rem 0rem;
 }
 
 .project_description {
 	font-size: 1.6rem;
 }
 
-.project_btn {
-	border: none;
-	background-color: var(--color_brand1);
-	color: white;
-	display: inline-block;
-	font-weight: normal;
-	padding: 0.8rem 1.5rem;
-	font-size: 2rem;
+.btn_marginTop {
 	margin-top: 2rem;
 }
 
-@media (--medium) {
-	.project_icons {
-		font-size: 8rem;
-	}
+.project_nav {
+	width: 80%;
+}
 
-	.projects_container {
-		flex-direction: row;
+.project_nav_item {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	border: 2px solid white;
+	margin: 1rem;
+	transition: 0.5s;
+}
+
+.project_nav_item:hover {
+	background-color: white;
+}
+
+.active_item {
+	background-color: white;
+}
+
+@media (--large) {
+	.project_img {
+		height: 350px;
 	}
 
 	.project_item {
-		width: 50%;
+		width: 80%;
+	}
+	.project_info {
+		width: 80%;
+		align-items: flex-start;
 	}
 
 	.project_title {
-		font-size: 4rem;
+		font-size: 3rem;
+		text-align: start;
+	}
+
+	.project_rectangle {
+		height: 1rem;
+		margin: 1rem 0rem 3rem 0rem;
 	}
 
 	.project_description {
-		font-size: 2rem;
+		font-size: 2.4rem;
+	}
+
+	.btn_marginTop {
+		margin-top: 3rem;
+	}
+
+	.project_nav_item {
+		margin: 2rem;
 	}
 }
