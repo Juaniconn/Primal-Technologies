@@ -573,7 +573,7 @@ p {
 /* Services */
 
 .services_menu{
-	width: 100%;
+	width: 75%;
 }
 
 .service_item {
@@ -1289,9 +1289,10 @@ p {
 
 	.services_menu {
 		display: grid;
-		grid-template: 'a b c d';
+		grid-template: 'a b' 'c d';
 		grid-gap: 1.5rem;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 	}
 
 	.service_icon {
