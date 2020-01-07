@@ -1,11 +1,14 @@
 import React from 'react';
+import {withRouter} from 'react-router-dom' 
 
-const Services = () => {
+const Services = (props) => {
+  const { history } = props;
+
   const options = [
-    { title: 'Legacy Code', icon: 'a' },
-    { title: 'Custom Software', icon: 'b' },
-    { title: 'Outsourcing', icon: 'c' },
-    { title: 'Mobile', icon: 'd' },
+    { title: 'Legacy Code', icon: 'a', link: "/legacy" },
+    { title: 'Custom Software', icon: 'b', link: "/software" },
+    { title: 'Outsourcing', icon: 'c', link: "/outsourcing" },
+    { title: 'Mobile', icon: 'd', link: "/mobile" },
   ];
 
   return (
@@ -17,7 +20,11 @@ const Services = () => {
         <div className="services_menu flex-ai-center white">
           {options.map(option => {
             return (
-              <div key={option.title} className={`flex flex-d-col flex-ai-center service_item zoom-in-bounce ${option.icon}`}>
+              <div onClick={
+                () => history.push(option.link)
+              }    
+              key={option.title} className={`flex flex-d-col flex-ai-center service_item zoom-in-bounce ${option.icon}`}
+              >
                 {/* <i className={`${option.icon} service_icon`}></i> */}
                 <p className="service_title">{option.title}</p>
               </div>
@@ -29,4 +36,4 @@ const Services = () => {
   );
 };
 
-export default Services
+export default withRouter(Services)
