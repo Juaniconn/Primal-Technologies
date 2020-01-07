@@ -11,7 +11,7 @@ class Project extends Component {
 
   render() {
     const { start, project, onTransition, onEnd } = this.props;
-    const { title, description, img, link } = project;
+    const { title, description, img} = project;
 
     return (
       <div className="flex flex-d-responsive flex-jc-center flex-ai-center w-100 white">

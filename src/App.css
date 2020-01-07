@@ -572,10 +572,54 @@ p {
 
 /* Services */
 
+.services_menu{
+	width: 100%;
+}
+
 .service_item {
 	cursor: pointer;
-	margin: 1rem 0rem;
-	width: 200px;
+	height: 20rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	padding: 10%;
+
+	position: relative;
+
+	background-size: cover;
+	background-position: center
+}
+
+.service_item .service_title{
+		text-align: center;
+		z-index: 1;
+	}
+
+.service_item::before{
+	content: "";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	background-color: rgba(0,0,0,.4);
+}
+
+.service_item.a{
+	background-image: url(https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+}
+
+.service_item.b{
+	background-image: url(https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+}
+
+.service_item.c{
+	background-image: url(https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+}
+
+.service_item.d{
+	background-image: url(https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
 }
 
 /*
@@ -1078,10 +1122,15 @@ p {
 	.special_text {
 		font-size: 2rem;
 	}
+	.service_item{
+		height: 30rem;
+	}
+
 	.services_menu {
 		display: grid;
+		grid-template-columns: 1fr;
 		grid-template: 'a' 'b' 'c' 'd';
-		grid-gap: 3rem;
+		grid-gap: 1.5rem;
 	}
 
 	.service_icon {
@@ -1166,10 +1215,15 @@ p {
 	.special_text {
 		font-size: 2.2rem;
 	}
+	.service_item{
+		height: 30rem;
+	}
+
 	.services_menu {
 		display: grid;
+		grid-template-columns: 1fr 1fr;
 		grid-template: 'a b' 'c d';
-		grid-gap: 3rem;
+		grid-gap: 1.5rem;
 	}
 
 	.service_icon {
@@ -1229,10 +1283,15 @@ p {
 }
 
 @media (min-width: 1024px) {
+	.service_item{
+		height: 20rem;
+	}
+
 	.services_menu {
 		display: grid;
 		grid-template: 'a b c d';
-		grid-gap: 3rem;
+		grid-gap: 1.5rem;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 
 	.service_icon {
