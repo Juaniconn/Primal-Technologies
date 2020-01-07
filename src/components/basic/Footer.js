@@ -3,7 +3,6 @@ import React from 'react'
 function Footer() {
   const icons = [
     { icon: 'icon-twitter' },
-    { icon: 'icon-youtube' },
     { icon: 'icon-instagram' },
     { icon: 'icon-facebook2' },
     { icon: 'icon-linkedin' },
