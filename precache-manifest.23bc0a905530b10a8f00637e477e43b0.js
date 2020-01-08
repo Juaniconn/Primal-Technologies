@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "054c0266a2e6c8da2dd36fbb95f98c7f",
+    "revision": "0b384feb8343c120a3a8ddcd57d9dd76",
     "url": "/Primal-Technologies/index.html"
   },
   {
-    "revision": "bccd7966e0cc6639bd1c",
+    "revision": "4e9b301062d08c0578a7",
     "url": "/Primal-Technologies/static/css/main.2ae2be82.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Primal-Technologies/static/js/2.71b83de6.chunk.js.LICENSE"
   },
   {
-    "revision": "bccd7966e0cc6639bd1c",
-    "url": "/Primal-Technologies/static/js/main.7e06e11e.chunk.js"
+    "revision": "4e9b301062d08c0578a7",
+    "url": "/Primal-Technologies/static/js/main.4ebfd65f.chunk.js"
   },
   {
     "revision": "0f7b8e7c8dbb89dcff8f",
