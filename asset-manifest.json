@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Primal-Technologies/static/css/main.2ae2be82.chunk.css",
-    "main.js": "/Primal-Technologies/static/js/main.4ebfd65f.chunk.js",
-    "main.js.map": "/Primal-Technologies/static/js/main.4ebfd65f.chunk.js.map",
+    "main.css": "/Primal-Technologies/static/css/main.2eee50c0.chunk.css",
+    "main.js": "/Primal-Technologies/static/js/main.565087fe.chunk.js",
+    "main.js.map": "/Primal-Technologies/static/js/main.565087fe.chunk.js.map",
     "runtime-main.js": "/Primal-Technologies/static/js/runtime-main.e04f70e7.js",
     "runtime-main.js.map": "/Primal-Technologies/static/js/runtime-main.e04f70e7.js.map",
-    "static/js/2.71b83de6.chunk.js": "/Primal-Technologies/static/js/2.71b83de6.chunk.js",
-    "static/js/2.71b83de6.chunk.js.map": "/Primal-Technologies/static/js/2.71b83de6.chunk.js.map",
+    "static/js/2.0f392948.chunk.js": "/Primal-Technologies/static/js/2.0f392948.chunk.js",
+    "static/js/2.0f392948.chunk.js.map": "/Primal-Technologies/static/js/2.0f392948.chunk.js.map",
     "index.html": "/Primal-Technologies/index.html",
-    "precache-manifest.23bc0a905530b10a8f00637e477e43b0.js": "/Primal-Technologies/precache-manifest.23bc0a905530b10a8f00637e477e43b0.js",
+    "precache-manifest.800fdfb5d67ec06ff4af69cfe63d6200.js": "/Primal-Technologies/precache-manifest.800fdfb5d67ec06ff4af69cfe63d6200.js",
     "service-worker.js": "/Primal-Technologies/service-worker.js",
-    "static/css/main.2ae2be82.chunk.css.map": "/Primal-Technologies/static/css/main.2ae2be82.chunk.css.map",
-    "static/js/2.71b83de6.chunk.js.LICENSE": "/Primal-Technologies/static/js/2.71b83de6.chunk.js.LICENSE",
+    "static/css/main.2eee50c0.chunk.css.map": "/Primal-Technologies/static/css/main.2eee50c0.chunk.css.map",
+    "static/js/2.0f392948.chunk.js.LICENSE": "/Primal-Technologies/static/js/2.0f392948.chunk.js.LICENSE",
     "static/media/App.css": "/Primal-Technologies/static/media/icomoon.e33116df.ttf",
     "static/media/portfolio_post1.jpg": "/Primal-Technologies/static/media/portfolio_post1.39813596.jpg",
     "static/media/portfolio_post2.jpg": "/Primal-Technologies/static/media/portfolio_post2.9712714c.jpg",
@@ -20,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e04f70e7.js",
-    "static/js/2.71b83de6.chunk.js",
-    "static/css/main.2ae2be82.chunk.css",
-    "static/js/main.4ebfd65f.chunk.js"
+    "static/js/2.0f392948.chunk.js",
+    "static/css/main.2eee50c0.chunk.css",
+    "static/js/main.565087fe.chunk.js"
   ]
 }
