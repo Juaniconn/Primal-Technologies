@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "08d8bdc37fe208265bded41103746037",
+    "revision": "054c0266a2e6c8da2dd36fbb95f98c7f",
     "url": "/Primal-Technologies/index.html"
   },
   {
-    "revision": "52bed08db39a0e19af8a",
-    "url": "/Primal-Technologies/static/css/main.1e686ed5.chunk.css"
+    "revision": "bccd7966e0cc6639bd1c",
+    "url": "/Primal-Technologies/static/css/main.2ae2be82.chunk.css"
   },
   {
-    "revision": "0fd2c868663f12faa619",
-    "url": "/Primal-Technologies/static/js/2.42d22997.chunk.js"
+    "revision": "75a5cc9add3119e9ee34",
+    "url": "/Primal-Technologies/static/js/2.71b83de6.chunk.js"
   },
   {
-    "revision": "d705cb622423d72c5defbf368ca70dcc",
-    "url": "/Primal-Technologies/static/js/2.42d22997.chunk.js.LICENSE"
+    "revision": "e928fe768baa9832b5bc57eae021f30c",
+    "url": "/Primal-Technologies/static/js/2.71b83de6.chunk.js.LICENSE"
   },
   {
-    "revision": "52bed08db39a0e19af8a",
-    "url": "/Primal-Technologies/static/js/main.130b226f.chunk.js"
+    "revision": "bccd7966e0cc6639bd1c",
+    "url": "/Primal-Technologies/static/js/main.7e06e11e.chunk.js"
   },
   {
     "revision": "0f7b8e7c8dbb89dcff8f",
