@@ -475,6 +475,7 @@ p {
 	position: fixed;
 	right: 10%;
 	top: 0;
+	width: 100%;
 }
 
 .header {
