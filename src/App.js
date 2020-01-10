@@ -8,15 +8,13 @@ import Home from './components/landing/Main';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Route exact path="/" component={Home}/>
-        <Route path="/legacy" component={Legacy_code}/>
-        <Route path="/software" component={Custom_software}/>
-        <Route path="/outsourcing" component={Outsourcing}/>
-        <Route path="/mobile" component={Mobile}/>
-      </Router>
-    </div>
+    <Router>
+      <Route exact path="/" component={Home}/>
+      <Route path="/legacy" component={Legacy_code}/>
+      <Route path="/software" component={Custom_software}/>
+      <Route path="/outsourcing" component={Outsourcing}/>
+      <Route path="/mobile" component={Mobile}/>
+    </Router>
   );
 }
 

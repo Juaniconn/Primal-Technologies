@@ -5,7 +5,7 @@ const Services = (props) => {
   const { history } = props;
 
   const options = [
-    { title: 'Legacy Code', icon: 'a', link: "/legacy" },
+    { title: 'Legacy System Solutions', icon: 'a', link: "/legacy" },
     { title: 'Custom Software', icon: 'b', link: "/software" },
     { title: 'Outsourcing', icon: 'c', link: "/outsourcing" },
     { title: 'Mobile', icon: 'd', link: "/mobile" },
@@ -27,6 +27,7 @@ const Services = (props) => {
               >
                 {/* <i className={`${option.icon} service_icon`}></i> */}
                 <p className="service_title">{option.title}</p>
+                <div className={`service_imageBackground ${option.icon}`}></div>
               </div>
             );
           })}

@@ -85,6 +85,7 @@ $secondary-color: #f0f;
 		position: absolute;
 		color: $brand-color;
 		z-index: -1;
+		right: 0;
 	}
 
 	&::after {
@@ -94,6 +95,7 @@ $secondary-color: #f0f;
 		align-items: center;
 		color: $secondary-color;
 		z-index: -2;
+		right: 0;
 	}
 
 	&:hover::before {

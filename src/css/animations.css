@@ -1,8 +1,6 @@
 /* Animations */
 
-
-/* Headroom */
-
+/* Headroom Animation*/
 .headroom-wrapper{
 	position: fixed;
 	z-index: 9999;
@@ -14,10 +12,41 @@
 	left: 0;
 	right: 0;
 	transition: transform 200ms ease-in-out;
-  }
-  .headroom--unpinned {
+}
+
+.headroom--unpinned {
 	transform: translateY(-100%);
-  }
-  .headroom--pinned {
+}
+
+.headroom--pinned {
 	transform: translateY(0%);
-  }
+}
+
+/* Dropdown Animation */
+
+.fadeIn{
+	animation: fadeIn 200ms ease-in forwards;
+}
+
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+
+	to{
+		opacity: 1;	
+	}
+}
+.fadeOut{
+	animation: fadeOut 200ms ease-in forwards;
+}
+
+@keyframes fadeOut{
+	from{
+		opacity: 1;
+	}
+
+	to{
+		opacity: 0;	
+	}
+}

@@ -13,14 +13,11 @@ import Newsletter from './Newsletter'
 import Contact from './Contact'
 //import Map from './Map'
 import Footer from './../basic/Footer'
-import Headroom from 'react-headroom'
 
 function Main() {
   return (
     <div className="App">
-        <Headroom disableInlineStyles>
-            <Header />
-        </Headroom>
+        <Header />
         <Hero />
         <About />
         <Services />
