@@ -16,3 +16,5 @@
 @import 'contact.css';
 @import 'maps.css';
 @import 'footer.css';
+
+@import './services/left_side.css'
