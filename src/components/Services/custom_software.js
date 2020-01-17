@@ -35,16 +35,6 @@ const fields = [
         )
     },
     {
-        icon: '', title: 'Internet of Things (IoT)', content: (
-            <p>
-                Primal IoT R&amp;D center focuses on helping traditional hardware vendors,
-                manufacturers and small &amp; medium-sized platform service providers quickly build
-                custom IoT platform that is stable, reliable, safe and controllable and
-                eventually realize the upgrading and transformation of the Internet.
-        </p>
-        )
-    },
-    {
         icon: '', title: 'Business Data Analysis', content: (
             <p>
                 Through professional business data analysis service, Primal helps enterprises
@@ -82,9 +72,14 @@ const Custom_software = () => {
     return (
         <div className="main_customSoftware">
             <Header />
-            <section>
+            <section className="flex-d-col custom_software_section">
+                <div className="w-100 banner">
+                    <h2 className="section-title white ta-center">
+                        Dedicated teams for your unique <br />
+                        business requirements
+                    </h2>
+                </div>
                 <div className="container flex flex-d-col flex-ai-center">
-                    <h2 className="section-title brand">Custom Software</h2>
                     <div className="w-100 cards_container">
                         {fields.map((field, i) => (
                             <div className="card" style={{ backgroundColor: (i % 2 === 0) ? '#eee' : '#ddd' }}>

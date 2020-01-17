@@ -1368,14 +1368,26 @@ p {
         color: var(--color_white);
     }
 
+.custom_software_section {
+	padding: 5rem 0px;
+}
+
+.banner {
+	padding: 120px 0px;
+	background-image: url(./img/2_4.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
 .cards_container {
 	display: grid;
-	grid-gap: 20px;
 	grid-template-columns: auto;
 }
 
 .card {
-	height: 350px;
+	width: 90%;
+	margin: 20px 5%;
+	height: 420px;
 	border-radius: 6px;
 }
 
