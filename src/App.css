@@ -1368,6 +1368,33 @@ p {
         color: var(--color_white);
     }
 
+.cards_container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: auto;
+}
+
+.card {
+	height: 350px;
+	border-radius: 6px;
+}
+
+.card:hover {
+	box-shadow: 5px 5px 25px -10px rgba(0, 0, 0, 0.75);
+}
+
+.card_header {
+	padding: 10px 20px;
+	font-size: 2rem;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.card_body {
+	padding: 10px 20px;
+	font-size: 1.6rem;
+}
+
 @media (max-width: 767px) {
 	section {
 		display: flex;
@@ -1624,6 +1651,10 @@ p {
 	.nl_btn {
 		width: 30%;
 	}
+	.cards_container {
+		grid-template-columns: auto auto;
+		grid-gap: 10px;
+	}
 }
 
 @media (min-width: 1024px) {
@@ -1701,5 +1732,9 @@ p {
 
 	.icon_text {
 		font-size: 1.4rem;
+	}
+	.cards_container {
+		grid-template-columns: auto auto auto;
+		grid-gap: 10px;
 	}
 }
