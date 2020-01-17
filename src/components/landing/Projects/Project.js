@@ -2,16 +2,9 @@ import React, { Component } from 'react';
 import Glitch from './Glitch';
 
 class Project extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      test: 0
-    };
-  }
-
   render() {
     const { start, project, onTransition, onEnd } = this.props;
-    const { title, description, img} = project;
+    const { title, description, img } = project;
 
     return (
       <div className="flex flex-d-responsive flex-jc-center flex-ai-center w-100 white">
