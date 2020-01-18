@@ -1,0 +1,54 @@
+.custom_software_section {
+	padding: 5rem 0px;
+}
+
+.banner {
+	padding: 120px 0px;
+	background-image: url(./img/2_4.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.cards_container {
+	display: grid;
+	grid-template-columns: auto;
+}
+
+.card {
+	width: 90%;
+	margin: 20px 5%;
+	height: 420px;
+	border-radius: 6px;
+}
+
+.card:hover {
+	-webkit-box-shadow: 5px 5px 25px -10px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 5px 5px 25px -10px rgba(0, 0, 0, 0.75);
+	box-shadow: 5px 5px 25px -10px rgba(0, 0, 0, 0.75);
+}
+
+.card_header {
+	padding: 10px 20px;
+	font-size: 2rem;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.card_body {
+	padding: 10px 20px;
+	font-size: 1.6rem;
+}
+
+@media (--medium) {
+	.cards_container {
+		grid-template-columns: auto auto;
+		gap: 10px;
+	}
+}
+
+@media (--large) {
+	.cards_container {
+		grid-template-columns: auto auto auto;
+		gap: 10px;
+	}
+}

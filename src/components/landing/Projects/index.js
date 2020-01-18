@@ -26,7 +26,7 @@ class Projects extends Component {
       ourProjects: [],
       current: 0,
       startTransition: false,
-      nextSlide: -1,
+      nextSlide: 0,
     };
   }
 
@@ -53,7 +53,7 @@ class Projects extends Component {
   }
 
   render() {
-    const { ourProjects, current, startTransition } = this.state;
+    const { ourProjects, current, nextSlide, startTransition } = this.state;
 
     if (ourProjects.length > 0) {
       return (
@@ -72,7 +72,7 @@ class Projects extends Component {
                   return (
                     <div
                       key={i}
-                      className={`project_nav_item ${(i === current) ? "active_item" : ""}`}
+                      className={`project_nav_item ${(i === nextSlide) ? "active_item" : ""}`}
                       onClick={() => this.onStartTransition(i)}
                     />
                   );
