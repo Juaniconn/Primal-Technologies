@@ -155,9 +155,9 @@ section {
 	--color_brand5: #002d38;
 
 	--color_grayScale1: #e6e6e6;
-	--color_grayScale2: #adadad;
+	--color_grayScale2: #bbbbbb;
 	--color_grayScale3: #6c6c6c;
-	--color_grayScale4: #343434;
+	--color_grayScale4: #1E1E1E;
 	--color_grayScale5: #0a0a0a;
 
 	--color_opacity: rgba(10, 10, 10, 0.8);
@@ -706,34 +706,6 @@ p {
 
 /* Dropdown Animation */
 
-.fadeIn{
-	animation: fadeIn 200ms ease-in forwards;
-}
-
-@keyframes fadeIn{
-	from{
-		opacity: 0;
-	}
-
-	to{
-		opacity: 1;	
-	}
-}
-
-.fadeOut{
-	animation: fadeOut 200ms ease-in forwards;
-}
-
-@keyframes fadeOut{
-	from{
-		opacity: 1;
-	}
-
-	to{
-		opacity: 0;	
-	}
-}
-
 /* Header */
 
 .header {
@@ -764,10 +736,14 @@ p {
 
 .header .main_nav .nav .navItem .link {
 					text-decoration: none;
-					color: white;
+					color: var(--color_white);
 					width: 100%;
 					position: relative;
 					font-size: 1.6rem;
+				}
+
+.header .main_nav .nav .navItem .link:hover{
+					color: var(--color_white);
 				}
 
 .header .main_nav .nav .navItem ul{
@@ -779,11 +755,15 @@ p {
 				}
 
 .header .main_nav .nav .navItem ul li{
-						color: var(--color_white);
+						color: var(--color_grayScale2);
 						list-style: none;
 						line-height: initial;
 						font-size: 1.4rem;
 						cursor: pointer;
+					}
+
+.header .main_nav .nav .navItem ul li:hover{
+						color: var(--color_white);
 					}
 
 .header .main_nav .nav .navItem .nav-hideDropdown{
@@ -1355,7 +1335,7 @@ p {
 /* Left_SIde */
 
 .left_side{
-    width: 25%;
+    max-width: 25%;
     height: 100vh;
     background-color: var(--color_grayScale5);
 
@@ -1366,6 +1346,7 @@ p {
 
 .left_side h1{
         color: var(--color_white);
+        text-align: center;
     }
 
 @media (max-width: 767px) {
@@ -1393,10 +1374,11 @@ p {
   }
   @keyframes anim-show-navbar {
     from {
-      height: 0;
+      transform: translateY(-100%);
     }
     to {
-      height: 26rem;
+      transform: translateY(7rem);
+      height: auto;
     }
   }
   .hide-navbar {
@@ -1407,41 +1389,69 @@ p {
   }
   @keyframes anim-hide-navbar {
     from {
-      height: 26rem;
+      height: auto;
+      transform: translateY(7rem);
     }
     to {
-      height: 0;
+      transform: translateY(-100%);
     }
   }
-	.main_nav {
-		width: 100%;
-		position: fixed;
-		z-index: 0;
-		left: 0;
-		right: 0;
-		top: 0;
-		transform: translateY(7rem);
-		transition: 450ms all;
-		background-color: var(--color_grayScale5);
-		border-bottom: 0.1rem solid var(--color_grayScale4);
-		height: 0rem;
-		overflow: hidden;
-	}
-	
-	.nav {
-		line-height: initial;
-		padding: 2rem 10%;
-		flex-direction: column;
-		margin: 0;
-		justify-content: space-around;
-		align-items: center;
-		height: 100%;
-	}
+		.header .main_nav {
+			width: 100%;
+			position: fixed;
+			z-index: -1;
+			left: 0;
+			right: 0;
+			top: 0;
+			transform: translateY(-100%);
+			transition: 450ms all;
+			background-color: var(--color_grayScale5);
+			overflow: hidden
+		}
+			.header .main_nav .nav {
+				line-height: initial;
+				flex-direction: column;
+				margin: 0;
+				justify-content: flex-start;
+				align-items: center;
+				height: 100%;
+				padding: 4rem 0
+			}
+				.header .main_nav .nav .navItem {
+					margin: 2rem 0 !important;
+					padding-bottom: 0rem;
+					display: inline-flex;
+					align-items: center;
+					flex-direction: column;
+					width: 100%
+				}
+					.header .main_nav .nav .navItem .link{
+						width: initial;
+					}
 
-	.navItem {
-		margin: 0;
-		padding-bottom: 2rem;
-	}
+					.header .main_nav .nav .navItem ul{
+						margin-top: 1.5rem;
+						width: 90%;
+						position: relative;
+						grid-gap: 2rem;
+						padding: 2rem 0
+					}
+						.header .main_nav .nav .navItem ul li{
+							text-align: center;
+							font-size: 1.2rem;
+							justify-self: center;
+							width: 90%;
+							padding-bottom: 1rem;
+							border-bottom: .1rem solid var(--color_grayScale3);
+						}
+
+						.header .main_nav .nav .navItem ul li:hover{
+							color: var(-color_white	);
+						}
+
+					.header .main_nav .nav .navItem .nav-hideDropdown{
+						display: grid;
+					}
 
 	.hamburger_bar {
 		display: block;
@@ -1538,6 +1548,32 @@ p {
 	.section-title {
 		font-size: 4rem;
 		margin-bottom: 4rem;
+	}
+	.fadeIn{
+		animation: fadeIn 200ms ease-in forwards;
+	}
+	
+	@keyframes fadeIn{
+		from{
+			opacity: 0;
+		}
+	
+		to{
+			opacity: 1;	
+		}
+	}
+	.fadeOut{
+		animation: fadeOut 200ms ease-in forwards;
+	}
+	
+	@keyframes fadeOut{
+		from{
+			opacity: 1;
+		}
+	
+		to{
+			opacity: 0;	
+		}
 	}
 	.hamburger_bar {
 		display: none;

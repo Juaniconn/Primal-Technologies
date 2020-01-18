@@ -1,7 +1,7 @@
 /* Left_SIde */
 
 .left_side{
-    width: 25%;
+    max-width: 25%;
     height: 100vh;
     background-color: var(--color_grayScale5);
 
@@ -11,5 +11,6 @@
 
     & h1{
         color: var(--color_white);
+        text-align: center;
     }
 }

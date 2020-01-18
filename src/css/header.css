@@ -27,10 +27,14 @@
 				
 				& .link {
 					text-decoration: none;
-					color: white;
+					color: var(--color_white);
 					width: 100%;
 					position: relative;
 					font-size: 1.6rem;
+				}
+
+				& .link:hover{
+					color: var(--color_white);
 				}
 				
 				& ul{
@@ -40,17 +44,21 @@
 					grid-gap: 2rem;
 					display: grid;
 					& li{
-						color: var(--color_white);
+						color: var(--color_grayScale2);
 						list-style: none;
 						line-height: initial;
 						font-size: 1.4rem;
 						cursor: pointer;
 					}
+
+					& li:hover{
+						color: var(--color_white);
+					}
 				}
 				& .nav-hideDropdown{
 					display: none;
 				}
-				
+
 				& details {
 					
 					& summary{
@@ -74,34 +82,64 @@
 
 
 @media (--small) {
-	.main_nav {
-		width: 100%;
-		position: fixed;
-		z-index: 0;
-		left: 0;
-		right: 0;
-		top: 0;
-		transform: translateY(7rem);
-		transition: 450ms all;
-		background-color: var(--color_grayScale5);
-		border-bottom: 0.1rem solid var(--color_grayScale4);
-		height: 0rem;
-		overflow: hidden;
-	}
-	
-	.nav {
-		line-height: initial;
-		padding: 2rem 10%;
-		flex-direction: column;
-		margin: 0;
-		justify-content: space-around;
-		align-items: center;
-		height: 100%;
-	}
 
-	.navItem {
-		margin: 0;
-		padding-bottom: 2rem;
+	.header{
+		& .main_nav {
+			width: 100%;
+			position: fixed;
+			z-index: -1;
+			left: 0;
+			right: 0;
+			top: 0;
+			transform: translateY(-100%);
+			transition: 450ms all;
+			background-color: var(--color_grayScale5);
+			overflow: hidden;
+			& .nav {
+				line-height: initial;
+				flex-direction: column;
+				margin: 0;
+				justify-content: flex-start;
+				align-items: center;
+				height: 100%;
+				padding: 4rem 0;
+				& .navItem {
+					margin: 2rem 0 !important;
+					padding-bottom: 0rem;
+					display: inline-flex;
+					align-items: center;
+					flex-direction: column;
+					width: 100%;
+					& .link{
+						width: initial;
+					}
+
+					& ul{
+						margin-top: 1.5rem;
+						width: 90%;
+						position: relative;
+						grid-gap: 2rem;
+						padding: 2rem 0;
+						& li{
+							text-align: center;
+							font-size: 1.2rem;
+							justify-self: center;
+							width: 90%;
+							padding-bottom: 1rem;
+							border-bottom: .1rem solid var(--color_grayScale3);
+						}
+
+						& li:hover{
+							color: var(-color_white	);
+						}
+					}
+
+					& .nav-hideDropdown{
+						display: grid;
+					}
+				}
+			}
+		}
 	}
 
 	.hamburger_bar {

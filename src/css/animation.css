@@ -73,18 +73,20 @@
   }
   @-webkit-keyframes anim-show-navbar {
     from {
-      height: 0;
+      transform: translateY(-100%);
     }
     to {
-      height: 26rem;
+      transform: translateY(7rem);
+      height: auto;
     }
   }
   @keyframes anim-show-navbar {
     from {
-      height: 0;
+      transform: translateY(-100%);
     }
     to {
-      height: 26rem;
+      transform: translateY(7rem);
+      height: auto;
     }
   }
   .hide-navbar {
@@ -99,18 +101,20 @@
   }
   @-webkit-keyframes anim-hide-navbar {
     from {
-      height: 26rem;
+      height: auto;
+      transform: translateY(7rem);
     }
     to {
-      height: 0;
+      transform: translateY(-100%);
     }
   }
   @keyframes anim-hide-navbar {
     from {
-      height: 26rem;
+      height: auto;
+      transform: translateY(7rem);
     }
     to {
-      height: 0;
+      transform: translateY(-100%);
     }
   }
 }

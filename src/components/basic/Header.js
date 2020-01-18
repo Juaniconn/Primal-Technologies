@@ -27,8 +27,10 @@ class Header extends Component{
     }
     
     checknav(){
+        if(this.hideref.current.classList.contains("show-navbar")){
+            this.hideref.current.classList.add('hide-navbar')
+        }
         this.hideref.current.classList.remove('show-navbar')
-        this.hideref.current.classList.add('hide-navbar')
         this.dropdownRef.current.classList.remove('nav-showDropdown')
         this.dropdownRef.current.classList.remove('fadeIn')
         this.dropdownRef.current.classList.add('fadeOut')
