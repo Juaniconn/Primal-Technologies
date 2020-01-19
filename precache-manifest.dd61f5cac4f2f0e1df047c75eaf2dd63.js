@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b169c76e74b6bc51beb12800292c38f3",
+    "revision": "24ddf71f0d99edbe5339d1211c63e686",
     "url": "/index.html"
   },
   {
-    "revision": "85bbc9aaf468760498d0",
-    "url": "/static/css/main.84c864f9.chunk.css"
+    "revision": "578d2ecd50650b6c60d8",
+    "url": "/static/css/main.82be2eb2.chunk.css"
   },
   {
-    "revision": "87b2a6b87893c0c2f4e4",
-    "url": "/static/js/2.fddbd851.chunk.js"
+    "revision": "b6930e7923980f63b8e4",
+    "url": "/static/js/2.0c600d87.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/static/js/2.fddbd851.chunk.js.LICENSE"
+    "url": "/static/js/2.0c600d87.chunk.js.LICENSE"
   },
   {
-    "revision": "85bbc9aaf468760498d0",
-    "url": "/static/js/main.a57ba8ce.chunk.js"
+    "revision": "578d2ecd50650b6c60d8",
+    "url": "/static/js/main.cc48094b.chunk.js"
   },
   {
     "revision": "815d2d6ffa343769b492",
     "url": "/static/js/runtime-main.97b70df1.js"
+  },
+  {
+    "revision": "c1ddcaa4d40a1ad7797c8946233c9b79",
+    "url": "/static/media/2_4.c1ddcaa4.jpg"
   },
   {
     "revision": "51ef5c939745fee0c6c5a5d9b1487abd",
@@ -34,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e33116df2d33940751a16de2b273127a",
     "url": "/static/media/icomoon.e33116df.ttf"
+  },
+  {
+    "revision": "b382c9c900c31d3d88f1c9e285ca72a7",
+    "url": "/static/media/porftolio_photo1.b382c9c9.jpg"
   },
   {
     "revision": "39813596a7429373e44e3722caf86127",
