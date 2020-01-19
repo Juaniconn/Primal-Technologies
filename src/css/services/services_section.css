@@ -1,0 +1,18 @@
+/* Services section*/
+@import './left_side.css';
+@import './service_content.css';
+
+.main_service{
+    & .service_wrapper{
+        display: inline-flex;
+        width: 100%;
+    }
+}
+
+@media (--small){
+    .main_service{
+        & .service_wrapper{
+            flex-direction: column;
+        }
+    }
+}

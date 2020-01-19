@@ -35,6 +35,10 @@
 	}
 }
 
+.content_container{
+	overflow-x: hidden;
+}
+
 #cite {
 	margin-top: 2rem;
 }

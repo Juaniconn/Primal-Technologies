@@ -1,0 +1,62 @@
+/* Service Content*/
+
+.service_content{
+    padding: 14rem 7rem 7rem;
+    background-image: url(./img/porftolio_photo1.jpg);
+    background-size: cover;
+    position: relative;
+    color: white;
+    & .service_sec_info{
+        position: relative;
+        z-index: 2;
+
+        & h2{
+            font-size: 2.4rem;
+            margin-bottom: 2rem;
+        }
+
+        & p{
+            font-size: 1.6rem;
+        }
+
+        & p:not(:last-child){
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.service_content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: var(--color_opacity);
+}
+
+@media (--small){
+    .service_content{
+        & .service_sec_info{
+            & h2{
+                text-align: center;
+            }
+
+            & p{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (--medium){
+    .service_content{
+        width: 60%;
+    }
+}
+@media (--large){
+    .service_content{
+        width: 75%;
+    }
+}

@@ -842,6 +842,10 @@ p {
 
 /* About Us */
 
+.content_container{
+	overflow-x: hidden;
+}
+
 #cite {
 	margin-top: 2rem;
 }
@@ -1332,21 +1336,68 @@ p {
 	height: 100%;
 }
 
+/* Services section*/
+
 /* Left_SIde */
 
 .left_side{
-    max-width: 25%;
     height: 100vh;
     background-color: var(--color_grayScale5);
 
     display: flex;
-    justify-content: center;
-    align-items: center
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 10rem
 }
 
 .left_side h1{
         color: var(--color_white);
-        text-align: center;
+        margin: 0 7rem;
+        font-size: 2.5rem;
+    }
+
+/* Service Content*/
+
+.service_content{
+    padding: 14rem 7rem 7rem;
+    background-image: url(./img/porftolio_photo1.jpg);
+    background-size: cover;
+    position: relative;
+    color: white
+}
+
+.service_content .service_sec_info{
+        position: relative;
+        z-index: 2
+    }
+
+.service_content .service_sec_info h2{
+            font-size: 2.4rem;
+            margin-bottom: 2rem;
+        }
+
+.service_content .service_sec_info p{
+            font-size: 1.6rem;
+        }
+
+.service_content .service_sec_info p:not(:last-child){
+            margin-bottom: 2rem;
+        }
+
+.service_content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: var(--color_opacity);
+}
+
+.main_service .service_wrapper{
+        display: inline-flex;
+        width: 100%;
     }
 
 .custom_software_section {
@@ -1569,6 +1620,34 @@ p {
 	.value_body {
 		display: none;
 	}
+    .left_side{
+        padding: 14rem 0 7rem;
+        height: initial;
+        background-color: var(--color_grayScale5);
+
+        border-bottom: .1rem solid var(--color_white);
+    
+        display: flex;
+        justify-content: center;
+        align-items: initial
+    }
+    
+        .left_side h1{
+            color: var(--color_white);
+            margin: 0 7rem;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+            .service_content .service_sec_info h2{
+                text-align: center;
+            }
+
+            .service_content .service_sec_info p{
+                text-align: center;
+            }
+        .main_service .service_wrapper{
+            flex-direction: column;
+        }
 }
 
 @media (min-width: 768px) {
@@ -1699,6 +1778,12 @@ p {
 	.nl_btn {
 		width: 30%;
 	}
+    .left_side{
+        width: 40%;
+    }
+    .service_content{
+        width: 60%;
+    }
 	.cards_container {
 		grid-template-columns: auto auto;
 		grid-gap: 10px;
@@ -1781,6 +1866,12 @@ p {
 	.icon_text {
 		font-size: 1.4rem;
 	}
+    .left_side{
+        width: 25%;
+    }
+    .service_content{
+        width: 75%;
+    }
 	.cards_container {
 		grid-template-columns: auto auto auto;
 		grid-gap: 10px;
