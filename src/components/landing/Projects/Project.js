@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Glitch from './Glitch';
 
 class Project extends Component {
@@ -54,9 +55,9 @@ class Project extends Component {
               onEnd={onEnd}
             />
             <div className="btn-highlight btn_marginTop" >
-              <a href="/projects">
+              <Link href="/projects">
                 View More
-              </a>
+              </Link>
             </div>
           </div>
         </div >
