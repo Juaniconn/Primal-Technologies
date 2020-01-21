@@ -55,7 +55,7 @@ class Project extends Component {
               onEnd={onEnd}
             />
             <div className="btn-highlight btn_marginTop" >
-              <Link href="/projects">
+              <Link to="/projects">
                 View More
               </Link>
             </div>
