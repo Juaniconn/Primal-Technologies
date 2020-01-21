@@ -17,5 +17,7 @@
 @import 'maps.css';
 @import 'footer.css';
 
-@import "./services/services_section.css";
+@import './services/services_section.css';
 @import './services/custom_software.css';
+
+@import './projects/projects.css';

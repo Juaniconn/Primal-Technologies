@@ -14,6 +14,11 @@ section {
 	padding: 10rem 0rem;
 }
 
+a {
+	text-decoration: none;
+	color: white;
+}
+
 .brand {
 	color: var(--color_brand1);
 }

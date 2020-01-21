@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PrimalLogo from './../../img/primal_logo.gif'
 import Headroom from 'react-headroom'
-import {withRouter} from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 
-class Header extends Component{
+class Header extends Component {
     constructor(props) {
         super(props)
         this.hideref = React.createRef()
@@ -14,8 +14,8 @@ class Header extends Component{
         this.hideDropdown = this.hideDropdown.bind(this)
         this.disableDropdown = this.disableDropdown.bind(this)
     }
-    
-    
+
+
     showNavbar() {
         if (!this.hideref.current.classList.contains('show-navbar')) {
             this.hideref.current.classList.add('show-navbar')
@@ -25,9 +25,9 @@ class Header extends Component{
             this.hideref.current.classList.add('hide-navbar')
         }
     }
-    
-    checknav(){
-        if(this.hideref.current.classList.contains("show-navbar")){
+
+    checknav() {
+        if (this.hideref.current.classList.contains("show-navbar")) {
             this.hideref.current.classList.add('hide-navbar')
         }
         this.hideref.current.classList.remove('show-navbar')
@@ -35,52 +35,52 @@ class Header extends Component{
         this.dropdownRef.current.classList.remove('fadeIn')
         this.dropdownRef.current.classList.add('fadeOut')
     }
-    
-    showDropdown(){
+
+    showDropdown() {
         this.dropdownRef.current.classList.remove('fadeOut')
         this.dropdownRef.current.classList.remove('nav-hideDropdown')
         this.dropdownRef.current.classList.add('nav-showDropdown')
         this.dropdownRef.current.classList.add('fadeIn')
     }
-    
-    hideDropdown(){
+
+    hideDropdown() {
         this.dropdownRef.current.classList.remove('nav-showDropdown')
         this.dropdownRef.current.classList.remove('fadeIn')
         this.dropdownRef.current.classList.add('fadeOut')
     }
-    
-    disableDropdown(){
-        if(!this.dropdownRef.current.classList.contains('nav-showDropdown')){
+
+    disableDropdown() {
+        if (!this.dropdownRef.current.classList.contains('nav-showDropdown')) {
             this.dropdownRef.current.classList.add('nav-hideDropdown')
         }
     }
-    
+
     render(props) {
         const options = [
-            { 
-                menuItems: 'About' 
+            {
+                menuItems: 'About'
             },
-            { 
+            {
                 menuItems: 'Services',
-                subItem: 
-                [
-                    {item: "Legacy System Solution", link: "/legacy"},
-                    
-                    {item: "Custom Softare", link: "/software"},
-                    
-                    {item: "Outsourcing", link: "/outsourcing"},
-                    
-                    {item: "Mobile", link: "/mobile"}
-                    
-                ]  
+                subItem:
+                    [
+                        { item: "Legacy System Solution", link: "/legacy" },
+
+                        { item: "Custom Softare", link: "/software" },
+
+                        { item: "Outsourcing", link: "/outsourcing" },
+
+                        { item: "Mobile", link: "/mobile" }
+
+                    ]
             },
-            { 
-                menuItems: 'Portfolio' 
+            {
+                menuItems: 'Portfolio'
             },
-            { 
-                menuItems: 'Contact' 
+            {
+                menuItems: 'Contact'
             }
-            
+
         ];
 
         return (
@@ -91,14 +91,14 @@ class Header extends Component{
                         <nav className="main_nav" ref={this.hideref}>
                             <ul className="flex flex-jc-center flex-ai-center nav">
                                 {options.map(menu => {
-                                    if(menu.menuItems === "Services"){
-                                        return(
+                                    if (menu.menuItems === "Services") {
+                                        return (
                                             <li onMouseLeave={this.hideDropdown} onMouseEnter={this.showDropdown} key={menu.menuItems} className="navItem">
                                                 <a onClick={this.showNavbar} className="glitch-excited link" href={`#${menu.menuItems}`} data-glitch={menu.menuItems}>{menu.menuItems}</a>
-                                                <ul onAnimationEnd={this.disableDropdown}  className="nav-hideDropdown" ref={this.dropdownRef}>
+                                                <ul onAnimationEnd={this.disableDropdown} className="nav-hideDropdown" ref={this.dropdownRef}>
                                                     <React.Fragment>
                                                         {menu.subItem.map(services => {
-                                                            return(
+                                                            return (
                                                                 <li onClick={() => this.props.history.push(services.link)} key={services.item}> {services.item} </li>
                                                             )
                                                         })}
@@ -108,9 +108,9 @@ class Header extends Component{
                                         )
                                     }
 
-                                    return(
+                                    return (
                                         <li key={menu.menuItems} className="navItem">
-                                            <a onClick={this.showNavbar} className="glitch-excited link" href={`#${menu.menuItems}`} data-glitch={menu.menuItems}>{menu.menuItems}</a>
+                                            <a onClick={this.showNavbar} className="glitch-excited link" href={`/#${menu.menuItems}`} data-glitch={menu.menuItems}>{menu.menuItems}</a>
                                         </li>
                                     )
                                 })}

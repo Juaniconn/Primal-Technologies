@@ -11,7 +11,7 @@ function Newsletter() {
         </p>
         <div className="flex flex-d-col flex-ai-center w-100">
           <form className="w-100 nl_form">
-            <input className="field nl_input" type="email" placeholder="Enter your email" />
+            <input className="field nl_input" type="email" placeholder="Enter your email" required />
             <input className="btn-contained nl_btn" type="submit" value="Subscribe" />
           </form>
           <p className="simple_advice white">*Trust us, we'll never send you spam</p>

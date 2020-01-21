@@ -55,7 +55,7 @@ class Glitch extends Component {
         const newState = { current: 0, opacity: 1, animation: "start" };
         return this.setState(newState);
       }
-    }, 2500 / this.state.steps);
+    }, 1000 / this.state.steps);
 
     const { containerId } = this.props;
     const glitchContainer = document.getElementById(containerId);

@@ -53,7 +53,11 @@ class Project extends Component {
               onTransition={onTransition}
               onEnd={onEnd}
             />
-            <div className="btn-highlight btn_marginTop">View More</div>
+            <div className="btn-highlight btn_marginTop" >
+              <a href="/projects">
+                View More
+              </a>
+            </div>
           </div>
         </div >
       </div>

@@ -14,6 +14,11 @@ section {
 	padding: 10rem 0rem;
 }
 
+a {
+	text-decoration: none;
+	color: white;
+}
+
 .brand {
 	color: var(--color_brand1);
 }
@@ -852,7 +857,7 @@ p {
 
 /* Services */
 
-.services_menu{
+.services_menu {
 	width: 75%;
 }
 
@@ -862,7 +867,7 @@ p {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	align-items: center;	
+	align-items: center;
 	padding: 10%;
 
 	position: relative;
@@ -870,12 +875,12 @@ p {
 	overflow: hidden
 }
 
-.service_item .service_title{
+.service_item .service_title {
 		text-align: center;
 		z-index: 2;
 	}
 
-.service_item .service_imageBackground{
+.service_item .service_imageBackground {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -886,34 +891,34 @@ p {
 		transition: 450ms all;
 	}
 
-.service_item:hover .service_imageBackground{
+.service_item:hover .service_imageBackground {
 	transform: scale(1.1);
 }
 
-.service_item::before{
-	content: "";
+.service_item::before {
+	content: '';
 	z-index: 1;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	position: absolute;
-	background-color: rgba(0,0,0,.4);
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
-.service_imageBackground.a{
+.service_imageBackground.a {
+	background-image: url(./img/2_3.jpg);
+}
+
+.service_imageBackground.b {
 	background-image: url(https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
 }
 
-.service_imageBackground.b{
-	background-image: url(https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
-}
-
-.service_imageBackground.c{
+.service_imageBackground.c {
 	background-image: url(https://ak1.picdn.net/shutterstock/videos/19102831/thumb/1.jpg);
 }
 
-.service_imageBackground.d{
+.service_imageBackground.d {
 	background-image: url(https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
@@ -1358,41 +1363,41 @@ p {
 
 /* Service Content*/
 
-.service_content{
-    padding: 14rem 7rem 7rem;
-    background-image: url(./img/porftolio_photo1.jpg);
-    background-size: cover;
-    position: relative;
-    color: white
+.service_content {
+	padding: 14rem 7rem 7rem;
+	background-image: url(./img/portfolio_photo1.jpg);
+	background-size: cover;
+	position: relative;
+	color: white
 }
 
-.service_content .service_sec_info{
-        position: relative;
-        z-index: 2
-    }
+.service_content .service_sec_info {
+		position: relative;
+		z-index: 2
+	}
 
-.service_content .service_sec_info h2{
-            font-size: 2.4rem;
-            margin-bottom: 2rem;
-        }
+.service_content .service_sec_info h2 {
+			font-size: 2.4rem;
+			margin-bottom: 2rem;
+		}
 
-.service_content .service_sec_info p{
-            font-size: 1.6rem;
-        }
+.service_content .service_sec_info p {
+			font-size: 1.6rem;
+		}
 
-.service_content .service_sec_info p:not(:last-child){
-            margin-bottom: 2rem;
-        }
+.service_content .service_sec_info p:not(:last-child) {
+			margin-bottom: 2rem;
+		}
 
-.service_content::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    background-color: var(--color_opacity);
+.service_content::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	background-color: var(--color_opacity);
 }
 
 .main_service .service_wrapper{
@@ -1437,6 +1442,19 @@ p {
 .card_body {
 	padding: 10px 20px;
 	font-size: 1.6rem;
+}
+
+#main_projects {
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(./img/portfolio_photo2.jpg);
+	background-position: center;
+	background-size: cover;
+	font-size: 4.2rem;
+	font-weight: bold;
 }
 
 @media (max-width: 767px) {
@@ -1578,7 +1596,7 @@ p {
 	.special_text {
 		font-size: 2rem;
 	}
-	.service_item{
+	.service_item {
 		height: 30rem;
 	}
 
@@ -1638,13 +1656,13 @@ p {
             font-size: 2.5rem;
             text-align: center;
         }
-            .service_content .service_sec_info h2{
-                text-align: center;
-            }
+			.service_content .service_sec_info h2 {
+				text-align: center;
+			}
 
-            .service_content .service_sec_info p{
-                text-align: center;
-            }
+			.service_content .service_sec_info p {
+				text-align: center;
+			}
         .main_service .service_wrapper{
             flex-direction: column;
         }
@@ -1719,7 +1737,7 @@ p {
 	.special_text {
 		font-size: 2.2rem;
 	}
-	.service_item{
+	.service_item {
 		height: 20rem;
 	}
 
@@ -1781,9 +1799,9 @@ p {
     .left_side{
         width: 40%;
     }
-    .service_content{
-        width: 60%;
-    }
+	.service_content {
+		width: 60%;
+	}
 	.cards_container {
 		grid-template-columns: auto auto;
 		grid-gap: 10px;
@@ -1791,7 +1809,7 @@ p {
 }
 
 @media (min-width: 1024px) {
-	.service_item{
+	.service_item {
 		height: 25rem;
 	}
 
@@ -1869,9 +1887,9 @@ p {
     .left_side{
         width: 25%;
     }
-    .service_content{
-        width: 75%;
-    }
+	.service_content {
+		width: 75%;
+	}
 	.cards_container {
 		grid-template-columns: auto auto auto;
 		grid-gap: 10px;
